@@ -1,1 +1,10 @@
+PODS:
+  - CBZSplashView (1.0.0)
+
+DEPENDENCIES:
+  - CBZSplashView (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  CBZSplashView: 9ce4cba22024476ff4a97d6433e7347da6376016
+
 COCOAPODS: 0.39.0

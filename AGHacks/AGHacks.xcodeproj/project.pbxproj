@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DDFD60677DA944AE93CA813 /* libPods-AGHacks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1384BE40510ACA761349E653 /* libPods-AGHacks.a */; };
+		95231F071BDADD110060776C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 95231F061BDADD110060776C /* Podfile */; settings = {ASSET_TAGS = (); }; };
+		95231F0A1BDAE35F0060776C /* LoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95231F091BDAE35F0060776C /* LoaderViewController.m */; settings = {ASSET_TAGS = (); }; };
+		95231F0D1BDAE6470060776C /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 95231F0C1BDAE6470060776C /* UIColor+HexString.m */; settings = {ASSET_TAGS = (); }; };
+		95231F101BDAE6660060776C /* UIBezierPath+Shapes.m in Sources */ = {isa = PBXBuildFile; fileRef = 95231F0F1BDAE6660060776C /* UIBezierPath+Shapes.m */; settings = {ASSET_TAGS = (); }; };
 		9F3BE6C41BDA71660020F023 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3BE6C31BDA71660020F023 /* main.m */; };
 		9F3BE6C71BDA71660020F023 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3BE6C61BDA71660020F023 /* AppDelegate.m */; };
 		9F3BE6CA1BDA71660020F023 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3BE6C91BDA71660020F023 /* ViewController.m */; };
@@ -16,6 +21,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03479257620B0499A9D8FA2E /* Pods-AGHacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGHacks.release.xcconfig"; path = "Pods/Target Support Files/Pods-AGHacks/Pods-AGHacks.release.xcconfig"; sourceTree = "<group>"; };
+		1384BE40510ACA761349E653 /* libPods-AGHacks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AGHacks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D9F1D0B9373DD06AA8F1527 /* Pods-AGHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGHacks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AGHacks/Pods-AGHacks.debug.xcconfig"; sourceTree = "<group>"; };
+		95231F061BDADD110060776C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		95231F081BDAE35F0060776C /* LoaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoaderViewController.h; sourceTree = "<group>"; };
+		95231F091BDAE35F0060776C /* LoaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoaderViewController.m; sourceTree = "<group>"; };
+		95231F0B1BDAE6470060776C /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		95231F0C1BDAE6470060776C /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
+		95231F0E1BDAE6660060776C /* UIBezierPath+Shapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Shapes.h"; sourceTree = "<group>"; };
+		95231F0F1BDAE6660060776C /* UIBezierPath+Shapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Shapes.m"; sourceTree = "<group>"; };
 		9F3BE6BF1BDA71660020F023 /* AGHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AGHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F3BE6C31BDA71660020F023 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9F3BE6C51BDA71660020F023 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +48,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DDFD60677DA944AE93CA813 /* libPods-AGHacks.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5959B11A092DEE96EC564A2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D9F1D0B9373DD06AA8F1527 /* Pods-AGHacks.debug.xcconfig */,
+				03479257620B0499A9D8FA2E /* Pods-AGHacks.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		87BE1EF650D18F83A0593FD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1384BE40510ACA761349E653 /* libPods-AGHacks.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9F3BE6B61BDA71660020F023 = {
 			isa = PBXGroup;
 			children = (
 				9F3BE6C11BDA71660020F023 /* AGHacks */,
 				9F3BE6C01BDA71660020F023 /* Products */,
+				95231F061BDADD110060776C /* Podfile */,
+				5959B11A092DEE96EC564A2E /* Pods */,
+				87BE1EF650D18F83A0593FD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +98,12 @@
 				9F3BE6C61BDA71660020F023 /* AppDelegate.m */,
 				9F3BE6C81BDA71660020F023 /* ViewController.h */,
 				9F3BE6C91BDA71660020F023 /* ViewController.m */,
+				95231F081BDAE35F0060776C /* LoaderViewController.h */,
+				95231F091BDAE35F0060776C /* LoaderViewController.m */,
+				95231F0B1BDAE6470060776C /* UIColor+HexString.h */,
+				95231F0C1BDAE6470060776C /* UIColor+HexString.m */,
+				95231F0E1BDAE6660060776C /* UIBezierPath+Shapes.h */,
+				95231F0F1BDAE6660060776C /* UIBezierPath+Shapes.m */,
 				9F3BE6CB1BDA71660020F023 /* Main.storyboard */,
 				9F3BE6CE1BDA71660020F023 /* Assets.xcassets */,
 				9F3BE6D01BDA71660020F023 /* LaunchScreen.storyboard */,
@@ -86,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F3BE6D61BDA71660020F023 /* Build configuration list for PBXNativeTarget "AGHacks" */;
 			buildPhases = (
+				57FF1D99F5D5DFB14D060231 /* Check Pods Manifest.lock */,
 				9F3BE6BB1BDA71660020F023 /* Sources */,
 				9F3BE6BC1BDA71660020F023 /* Frameworks */,
 				9F3BE6BD1BDA71660020F023 /* Resources */,
+				C67B5F0ED69B7203920CF2FD /* Embed Pods Frameworks */,
+				A58B5FA8EDE76C3F2C214C4C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,20 +183,72 @@
 			files = (
 				9F3BE6D21BDA71660020F023 /* LaunchScreen.storyboard in Resources */,
 				9F3BE6CF1BDA71660020F023 /* Assets.xcassets in Resources */,
+				95231F071BDADD110060776C /* Podfile in Resources */,
 				9F3BE6CD1BDA71660020F023 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		57FF1D99F5D5DFB14D060231 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A58B5FA8EDE76C3F2C214C4C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AGHacks/Pods-AGHacks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C67B5F0ED69B7203920CF2FD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AGHacks/Pods-AGHacks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F3BE6BB1BDA71660020F023 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95231F0D1BDAE6470060776C /* UIColor+HexString.m in Sources */,
 				9F3BE6CA1BDA71660020F023 /* ViewController.m in Sources */,
 				9F3BE6C71BDA71660020F023 /* AppDelegate.m in Sources */,
 				9F3BE6C41BDA71660020F023 /* main.m in Sources */,
+				95231F0A1BDAE35F0060776C /* LoaderViewController.m in Sources */,
+				95231F101BDAE6660060776C /* UIBezierPath+Shapes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +358,7 @@
 		};
 		9F3BE6D71BDA71660020F023 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D9F1D0B9373DD06AA8F1527 /* Pods-AGHacks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AGHacks/Info.plist;
@@ -272,6 +370,7 @@
 		};
 		9F3BE6D81BDA71660020F023 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03479257620B0499A9D8FA2E /* Pods-AGHacks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AGHacks/Info.plist;
@@ -300,6 +399,7 @@
 				9F3BE6D81BDA71660020F023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
