@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CBZSplashView.h"
 
 @interface MainViewController : UIViewController
+
+@property (nonatomic, strong) CBZSplashView *splashView;
 
 @end

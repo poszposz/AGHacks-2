@@ -16,7 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    CBZSplashView *splashView = [CBZSplashView splashViewWithIcon:[UIImage imageNamed:@"SplashIcon"] backgroundColor:[UIColor grayColor]];
+    
+    splashView.animationDuration = 1.4;
+    
+    [self.view addSubview:splashView];
+    
+    self.splashView = splashView;
+    [splashView startAnimation];
 }
 
 - (void)didReceiveMemoryWarning {

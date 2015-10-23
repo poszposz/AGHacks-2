@@ -20,13 +20,7 @@
     
     [super viewDidLoad];
     
-    CBZSplashView *splashView = [CBZSplashView splashViewWithIcon:[UIImage imageNamed:@"SplashIcon"] backgroundColor:[UIColor grayColor]];
     
-    splashView.animationDuration = 1.4;
-    
-    [self.view addSubview:splashView];
-    
-    self.splashView = splashView;
     
     [self performSegueWithIdentifier:@"moveToMain" sender:nil];
 }
@@ -51,11 +45,11 @@
     
     [super didReceiveMemoryWarning];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.splashView startAnimation];
-    });
-    
-    [self performSegueWithIdentifier:@"moveToMain" sender:nil];
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [self.splashView startAnimation];
+//    });
+//    
+//    [self performSegueWithIdentifier:@"moveToMain" sender:nil];
 
 }
 

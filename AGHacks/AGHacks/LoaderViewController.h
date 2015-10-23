@@ -11,6 +11,6 @@
 
 @interface LoaderViewController : UIViewController
 
-@property (nonatomic, strong) CBZSplashView *splashView;
+
 
 @end
