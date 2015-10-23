@@ -12,6 +12,7 @@
 		95231F0A1BDAE35F0060776C /* LoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95231F091BDAE35F0060776C /* LoaderViewController.m */; settings = {ASSET_TAGS = (); }; };
 		95231F0D1BDAE6470060776C /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 95231F0C1BDAE6470060776C /* UIColor+HexString.m */; settings = {ASSET_TAGS = (); }; };
 		95231F101BDAE6660060776C /* UIBezierPath+Shapes.m in Sources */ = {isa = PBXBuildFile; fileRef = 95231F0F1BDAE6660060776C /* UIBezierPath+Shapes.m */; settings = {ASSET_TAGS = (); }; };
+		95231F131BDAF1B60060776C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95231F121BDAF1B60060776C /* MainViewController.m */; settings = {ASSET_TAGS = (); }; };
 		9F3BE6C41BDA71660020F023 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3BE6C31BDA71660020F023 /* main.m */; };
 		9F3BE6C71BDA71660020F023 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3BE6C61BDA71660020F023 /* AppDelegate.m */; };
 		9F3BE6CA1BDA71660020F023 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3BE6C91BDA71660020F023 /* ViewController.m */; };
@@ -31,6 +32,8 @@
 		95231F0C1BDAE6470060776C /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
 		95231F0E1BDAE6660060776C /* UIBezierPath+Shapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Shapes.h"; sourceTree = "<group>"; };
 		95231F0F1BDAE6660060776C /* UIBezierPath+Shapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Shapes.m"; sourceTree = "<group>"; };
+		95231F111BDAF1B60060776C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		95231F121BDAF1B60060776C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		9F3BE6BF1BDA71660020F023 /* AGHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AGHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F3BE6C31BDA71660020F023 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9F3BE6C51BDA71660020F023 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				9F3BE6C91BDA71660020F023 /* ViewController.m */,
 				95231F081BDAE35F0060776C /* LoaderViewController.h */,
 				95231F091BDAE35F0060776C /* LoaderViewController.m */,
+				95231F111BDAF1B60060776C /* MainViewController.h */,
+				95231F121BDAF1B60060776C /* MainViewController.m */,
 				95231F0B1BDAE6470060776C /* UIColor+HexString.h */,
 				95231F0C1BDAE6470060776C /* UIColor+HexString.m */,
 				95231F0E1BDAE6660060776C /* UIBezierPath+Shapes.h */,
@@ -247,6 +252,7 @@
 				9F3BE6CA1BDA71660020F023 /* ViewController.m in Sources */,
 				9F3BE6C71BDA71660020F023 /* AppDelegate.m in Sources */,
 				9F3BE6C41BDA71660020F023 /* main.m in Sources */,
+				95231F131BDAF1B60060776C /* MainViewController.m in Sources */,
 				95231F0A1BDAE35F0060776C /* LoaderViewController.m in Sources */,
 				95231F101BDAE6660060776C /* UIBezierPath+Shapes.m in Sources */,
 			);
