@@ -27,6 +27,7 @@
 		9FDB68841BDBB65800A50118 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB68831BDBB65800A50118 /* Gift.m */; settings = {ASSET_TAGS = (); }; };
 		9FDB68871BDBB66600A50118 /* GiftManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB68861BDBB66600A50118 /* GiftManager.m */; settings = {ASSET_TAGS = (); }; };
 		9FDB68911BDBE4A800A50118 /* ChoiceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB68901BDBE4A800A50118 /* ChoiceModel.m */; settings = {ASSET_TAGS = (); }; };
+		9FDB68951BDBEA5A00A50118 /* SelectionResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB68941BDBEA5A00A50118 /* SelectionResultViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,8 @@
 		9FDB68861BDBB66600A50118 /* GiftManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftManager.m; sourceTree = "<group>"; };
 		9FDB688F1BDBE4A800A50118 /* ChoiceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceModel.h; sourceTree = "<group>"; };
 		9FDB68901BDBE4A800A50118 /* ChoiceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoiceModel.m; sourceTree = "<group>"; };
+		9FDB68931BDBEA5A00A50118 /* SelectionResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionResultViewController.h; sourceTree = "<group>"; };
+		9FDB68941BDBEA5A00A50118 /* SelectionResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionResultViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +191,7 @@
 			children = (
 				9F3BE6CB1BDA71660020F023 /* Main.storyboard */,
 				9F3BE6D01BDA71660020F023 /* LaunchScreen.storyboard */,
+				9FDB68921BDBEA3500A50118 /* Result */,
 				951CD2F81BDBC3AD009239AD /* Interests */,
 				951CD2F11BDBB6EB009239AD /* Categories */,
 				951CD2F01BDBB6DB009239AD /* BasicInfo */,
@@ -228,6 +232,15 @@
 				9FDB68901BDBE4A800A50118 /* ChoiceModel.m */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		9FDB68921BDBEA3500A50118 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				9FDB68931BDBEA5A00A50118 /* SelectionResultViewController.h */,
+				9FDB68941BDBEA5A00A50118 /* SelectionResultViewController.m */,
+			);
+			name = Result;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +379,7 @@
 				951CD2F71BDBC2F2009239AD /* InterestsViewController.m in Sources */,
 				95231F131BDAF1B60060776C /* MainViewController.m in Sources */,
 				95231F0A1BDAE35F0060776C /* LoaderViewController.m in Sources */,
+				9FDB68951BDBEA5A00A50118 /* SelectionResultViewController.m in Sources */,
 				95231F101BDAE6660060776C /* UIBezierPath+Shapes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

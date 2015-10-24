@@ -33,11 +33,11 @@
     self.gifts = @[g1, g2, g3, g4];
 }
 
-- (NSArray *)fetchGiftsWithGender:(Gender)gender age:(NSNumber *)age price:(NSNumber *)price interest:(Interest)interest character:(Character)character practical:(BOOL)practical {
+- (NSArray *)fetchGiftsWithGender:(Gender)gender age:(NSNumber *)age price:(NSNumber *)price interest:(NSArray *)interests characters:(NSArray *)characters practical:(BOOL)practical {
     
     NSMutableArray *accurateGifts = [@[] mutableCopy];
     for (Gift *gift in self.gifts) {
-        if (gift.gender == gender && gift.interest == interest && gift.character == character && gift.practical == practical && gift.minAge.intValue <= age.intValue && gift.maxAge.intValue >= gift.maxAge.intValue && abs(gift.price.intValue - price.intValue) < kDefaultPriceRange) {
+        if (gift.gender == gender && [interests containsObject:[NSNumber numberWithInt:gift.interest]] && [characters containsObject:[NSNumber numberWithInt:gift.character]] && gift.practical == practical && gift.minAge.intValue <= age.intValue && gift.maxAge.intValue >= gift.maxAge.intValue && abs(gift.price.intValue - price.intValue) < kDefaultPriceRange) {
             [accurateGifts addObject:gift];
         }
     }

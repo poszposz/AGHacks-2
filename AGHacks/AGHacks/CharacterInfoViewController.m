@@ -59,6 +59,7 @@ static NSString *cellIdentifier = @"characterCellIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     Character character = [[self.characterTypes objectAtIndex:indexPath.row] intValue];
     cell.textLabel.text = [GiftManager stringValueForCharacter:character];
+    cell.textLabel.textAlignment = NSTextAlignmentCenter;
     
     return cell;
 }
