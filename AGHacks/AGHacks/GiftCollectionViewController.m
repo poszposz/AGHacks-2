@@ -48,7 +48,7 @@ static NSString *colCellId = @"cellid";
     Gift *gift = [self.gatheredGifts objectAtIndex:indexPath.row];
     
     UILabel *label = [[UILabel alloc] initWithFrame:cell.bounds];
-    label.textColor = [UIColor greenColor];
+    label.textColor = [UIColor whiteColor];
     label.textAlignment = NSTextAlignmentCenter;
     label.font = [UIFont boldSystemFontOfSize:12];
     label.text = gift.name;
