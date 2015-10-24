@@ -12,6 +12,7 @@
 		951CD2F71BDBC2F2009239AD /* InterestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951CD2F61BDBC2F1009239AD /* InterestsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		951CD2FE1BDBD11D009239AD /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951CD2FD1BDBD11D009239AD /* MapViewController.m */; settings = {ASSET_TAGS = (); }; };
 		951CD3021BDBD329009239AD /* CharacterInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951CD3011BDBD329009239AD /* CharacterInfoViewController.m */; settings = {ASSET_TAGS = (); }; };
+		951CD3051BDC0608009239AD /* GiftCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951CD3041BDC0608009239AD /* GiftCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
 		95231F071BDADD110060776C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 95231F061BDADD110060776C /* Podfile */; settings = {ASSET_TAGS = (); }; };
 		95231F0A1BDAE35F0060776C /* LoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95231F091BDAE35F0060776C /* LoaderViewController.m */; settings = {ASSET_TAGS = (); }; };
 		95231F0D1BDAE6470060776C /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 95231F0C1BDAE6470060776C /* UIColor+HexString.m */; settings = {ASSET_TAGS = (); }; };
@@ -41,6 +42,8 @@
 		951CD2FD1BDBD11D009239AD /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		951CD3001BDBD329009239AD /* CharacterInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterInfoViewController.h; sourceTree = "<group>"; };
 		951CD3011BDBD329009239AD /* CharacterInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterInfoViewController.m; sourceTree = "<group>"; };
+		951CD3031BDC0608009239AD /* GiftCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftCollectionViewController.h; sourceTree = "<group>"; };
+		951CD3041BDC0608009239AD /* GiftCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftCollectionViewController.m; sourceTree = "<group>"; };
 		95231F061BDADD110060776C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95231F081BDAE35F0060776C /* LoaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoaderViewController.h; sourceTree = "<group>"; };
 		95231F091BDAE35F0060776C /* LoaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoaderViewController.m; sourceTree = "<group>"; };
@@ -205,6 +208,8 @@
 				9F3BE6CE1BDA71660020F023 /* Assets.xcassets */,
 				9F3BE6D31BDA71660020F023 /* Info.plist */,
 				9F3BE6C21BDA71660020F023 /* Supporting Files */,
+				951CD3031BDC0608009239AD /* GiftCollectionViewController.h */,
+				951CD3041BDC0608009239AD /* GiftCollectionViewController.m */,
 			);
 			path = AGHacks;
 			sourceTree = "<group>";
@@ -366,6 +371,7 @@
 				951CD2F71BDBC2F2009239AD /* InterestsViewController.m in Sources */,
 				95231F131BDAF1B60060776C /* MainViewController.m in Sources */,
 				95231F0A1BDAE35F0060776C /* LoaderViewController.m in Sources */,
+				951CD3051BDC0608009239AD /* GiftCollectionViewController.m in Sources */,
 				95231F101BDAE6660060776C /* UIBezierPath+Shapes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
