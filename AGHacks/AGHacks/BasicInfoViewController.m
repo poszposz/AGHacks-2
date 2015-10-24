@@ -20,6 +20,9 @@
     [[self navigationController] setNavigationBarHidden:NO animated:YES];
     [[self navigationController] setTitle:@"Basic Info"];
     [self setupCheckboxes];
+    self.female.delegate = self;
+    self.male.delegate = self;
+    self.isPracticalCheckbox.delegate = self;
 
 }
 
@@ -39,19 +42,19 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)femaleCheckBoxWasTapped:(id)sender {
+- (void)didTapCheckBox:(BEMCheckBox *)checkBox {
     
-    if (self.female.on) {
-        self.male.userInteractionEnabled = NO;
+    if (checkBox == self.female) {
+        getApp().choice.selectedGender = GenderWoman;
+        self.male.on = NO;
     }
-
-}
-
-- (void)maleCheckBoxWasTapped:(id)sender {
+    
+    if (checkBox == self.male) {
+        getApp().choice.selectedGender = GenderMan;
+        self.female.on = NO;
+    }
     
 }
-
-
 
 /*
 #pragma mark - Navigation

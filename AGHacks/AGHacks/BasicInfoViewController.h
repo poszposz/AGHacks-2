@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "BEMCheckBox.h"
+#import "AppDelegate.h"
 
-@interface BasicInfoViewController : UIViewController
+@interface BasicInfoViewController : UIViewController <BEMCheckBoxDelegate>
 @property (weak, nonatomic) IBOutlet BEMCheckBox *female;
 @property (weak, nonatomic) IBOutlet BEMCheckBox *male;
 @property (weak, nonatomic) IBOutlet BEMCheckBox *isPracticalCheckbox;
