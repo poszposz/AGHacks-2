@@ -15,4 +15,12 @@
 
 - (void)createDefaultGifts;
 
+// Utility
+
++ (NSString *)stringValueForinterest:(Interest)interest;
++ (NSArray *)allInterests;
+
++ (NSString *)stringValueForCharacter:(Character)character;
++ (NSArray *)allCharacters;
+
 @end

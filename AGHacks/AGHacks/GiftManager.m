@@ -44,4 +44,70 @@
     return [accurateGifts copy];
 }
 
+// MARK interest utility
+
++ (NSArray *)allInterests {
+    return @[[NSNumber numberWithInt:InterestUniversal],
+             [NSNumber numberWithInt:InterestFood],
+             [NSNumber numberWithInt:InterestMovies],
+             [NSNumber numberWithInt:InterestComputers],
+             [NSNumber numberWithInt:InterestMotorization]];
+}
+
++ (NSString *)stringValueForinterest:(Interest)interest {
+    switch (interest) {
+        case InterestUniversal:
+            return @"Universal";
+            break;
+        case InterestFood:
+            return @"Food";
+            break;
+        case InterestMovies:
+            return @"Movies";
+            break;
+        case InterestComputers:
+            return @"Computers";
+            break;
+        case InterestFashion:
+            return @"Fashion";
+            break;
+        case InterestMotorization:
+            return @"Motorization";
+            break;
+        default:
+            break;
+    }
+    return @"";
+}
+
+// MARK character utility
+
++ (NSArray *)allCharacters {
+    return @[[NSNumber numberWithInt:CharacterCool],
+             [NSNumber numberWithInt:CharacterIntrovert],
+             [NSNumber numberWithInt:CharacterGeek],
+             [NSNumber numberWithInt:CharacterUniversal]];
+}
+
++ (NSString *)stringValueForCharacter:(Character)character {
+    
+    switch (character) {
+        case CharacterCool:
+            return @"Cool";
+            break;
+        case CharacterIntrovert:
+            return @"Introvert";
+            break;
+        case CharacterGeek:
+            return @"Geek";
+            break;
+        case CharacterUniversal:
+            return @"Universal";
+            break;
+        default:
+            break;
+    }
+    return @"";
+}
+
 @end

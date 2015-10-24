@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GiftManager.h"
+#import "ChoiceModel.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (strong, nonatomic) ChoiceModel *choice;
+@property (strong, nonatomic) GiftManager *giftManager;
 
 @end
 
+extern AppDelegate *getApp(void);

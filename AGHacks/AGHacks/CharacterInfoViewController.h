@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CharacterInfoViewController : UIViewController
+@interface CharacterInfoViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
+
+- (IBAction)nextDidClick:(id)sender;
 
 @end

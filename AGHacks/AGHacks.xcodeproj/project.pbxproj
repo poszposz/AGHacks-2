@@ -26,6 +26,7 @@
 		9F3BE6D21BDA71660020F023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F3BE6D01BDA71660020F023 /* LaunchScreen.storyboard */; };
 		9FDB68841BDBB65800A50118 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB68831BDBB65800A50118 /* Gift.m */; settings = {ASSET_TAGS = (); }; };
 		9FDB68871BDBB66600A50118 /* GiftManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB68861BDBB66600A50118 /* GiftManager.m */; settings = {ASSET_TAGS = (); }; };
+		9FDB68911BDBE4A800A50118 /* ChoiceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB68901BDBE4A800A50118 /* ChoiceModel.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,8 @@
 		9FDB68831BDBB65800A50118 /* Gift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gift.m; sourceTree = "<group>"; };
 		9FDB68851BDBB66600A50118 /* GiftManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftManager.h; sourceTree = "<group>"; };
 		9FDB68861BDBB66600A50118 /* GiftManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftManager.m; sourceTree = "<group>"; };
+		9FDB688F1BDBE4A800A50118 /* ChoiceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceModel.h; sourceTree = "<group>"; };
+		9FDB68901BDBE4A800A50118 /* ChoiceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoiceModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +224,8 @@
 				9FDB68831BDBB65800A50118 /* Gift.m */,
 				9FDB68851BDBB66600A50118 /* GiftManager.h */,
 				9FDB68861BDBB66600A50118 /* GiftManager.m */,
+				9FDB688F1BDBE4A800A50118 /* ChoiceModel.h */,
+				9FDB68901BDBE4A800A50118 /* ChoiceModel.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -357,6 +362,7 @@
 				9F3BE6C71BDA71660020F023 /* AppDelegate.m in Sources */,
 				951CD2FE1BDBD11D009239AD /* MapViewController.m in Sources */,
 				9F3BE6C41BDA71660020F023 /* main.m in Sources */,
+				9FDB68911BDBE4A800A50118 /* ChoiceModel.m in Sources */,
 				951CD2F71BDBC2F2009239AD /* InterestsViewController.m in Sources */,
 				95231F131BDAF1B60060776C /* MainViewController.m in Sources */,
 				95231F0A1BDAE35F0060776C /* LoaderViewController.m in Sources */,

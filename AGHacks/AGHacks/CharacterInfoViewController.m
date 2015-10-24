@@ -7,8 +7,14 @@
 //
 
 #import "CharacterInfoViewController.h"
+#import "AppDelegate.h"
+
+static NSString *cellIdentifier = @"characterCellIdentifier";
 
 @interface CharacterInfoViewController ()
+
+@property (nonatomic, strong) NSArray *characterTypes;
+@property (nonatomic, strong) NSMutableArray *selectedCharacterTypes;
 
 @end
 
@@ -16,6 +22,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
+    self.selectedCharacterTypes = [@[] mutableCopy];
+    
+    self.characterTypes = [GiftManager allCharacters];
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentifier];
     // Do any additional setup after loading the view.
 }
 
@@ -24,14 +39,37 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)nextDidClick:(id)sender {
+    [getApp().choice setSelectedCharacters:self.selectedCharacterTypes];
+    // prefirm some segue here :)
 }
-*/
+
+//MARK: table view
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.characterTypes.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    Character character = [[self.characterTypes objectAtIndex:indexPath.row] intValue];
+    cell.textLabel.text = [GiftManager stringValueForCharacter:character];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.selectedCharacterTypes addObject:[self.characterTypes objectAtIndex:indexPath.row]];
+}
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.selectedCharacterTypes removeObject:[self.characterTypes objectAtIndex:indexPath.row]];
+}
+
 
 @end
