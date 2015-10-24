@@ -7,20 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DC05253CCD021A2479FC37185788559 /* CBZVectorSplashView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C0F56352738273AA4D6132F728CD226 /* CBZVectorSplashView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1241739CAECA518C55EA7B16D09A2500 /* Pods-AGHacks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E2594C119653622B7078CC0D1A7B6 /* Pods-AGHacks-dummy.m */; };
+		0DC05253CCD021A2479FC37185788559 /* CBZVectorSplashView.h in Headers */ = {isa = PBXBuildFile; fileRef = AC87021D6BD86679B34BC484ED6864F3 /* CBZVectorSplashView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		115E185960522674097F9064AE1033B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		1566A3BF6977BD666050CB55471A2676 /* BEMCheckBox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2A92AABA50738CCEDE3384FAF989D /* BEMCheckBox-dummy.m */; };
 		2E0D75500CE382843E2837A7C6C2CA36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		35F2F5907A8A403A10CCC5AAB0EC87D9 /* CBZRasterSplashView.h in Headers */ = {isa = PBXBuildFile; fileRef = AA73F8460DD11F3046F119F450EBF0A4 /* CBZRasterSplashView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E333768DEC581AE4F90CBE662C5D807 /* CBZRasterSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = B84BBD72439FA317FF8B5171312B467E /* CBZRasterSplashView.m */; };
-		465F7E6C7A046E5BF8B61961649D92B3 /* CBZSplashView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9C6F95929A7E2EFFDB9ACAA7F1B99 /* CBZSplashView-dummy.m */; };
-		5DAC4F76940AAD9CBED5DDF8B3D8BC03 /* CBZSplashView.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C52F13A155FCCC8845753744711CCF /* CBZSplashView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8766C5A3F94414E472F42ED83106C37D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		9F065BF8EE6257BB80A79C214451F3E3 /* CBZSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DCEDE3405495502A4101F9D5F37D20 /* CBZSplashView.m */; };
-		FADAF24ECADC039A44E837C89865592C /* CBZVectorSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE7CDCCF991D33D610F03B93E45BF21 /* CBZVectorSplashView.m */; };
+		35F2F5907A8A403A10CCC5AAB0EC87D9 /* CBZRasterSplashView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5795A7AE74BD3A05E5E42CDCBE119425 /* CBZRasterSplashView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D81FB111B88EDA8FA1E2E8342667A1B /* Pods-AGHacks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E2594C119653622B7078CC0D1A7B6 /* Pods-AGHacks-dummy.m */; };
+		3E333768DEC581AE4F90CBE662C5D807 /* CBZRasterSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBAFA7FD11408E9FA77E8A8BD8266D5 /* CBZRasterSplashView.m */; };
+		465F7E6C7A046E5BF8B61961649D92B3 /* CBZSplashView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 365CD475308A5095EACA05D83CF6E979 /* CBZSplashView-dummy.m */; };
+		5DAC4F76940AAD9CBED5DDF8B3D8BC03 /* CBZSplashView.h in Headers */ = {isa = PBXBuildFile; fileRef = 57ED5573F27DFE9A7FC1E58C12D1FE65 /* CBZSplashView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C695A44B2F0B402B4D9ABEBCECEDFB6 /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0D29300A3F44AFD7F6EFF5B179C7C7 /* BEMAnimationManager.m */; };
+		9F065BF8EE6257BB80A79C214451F3E3 /* CBZSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 879B2CFD70813A436BE7D311D46D7C8C /* CBZSplashView.m */; };
+		A9D1DF131554FFF23F0C3B55FE73E948 /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = A60FC7E39491E33C465A888A64A16566 /* BEMCheckBox.m */; };
+		CEE9FF1F2D926ACD9F533F020A45266F /* BEMPathManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC318EC054086CD41AF5C5574BDDB565 /* BEMPathManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1D5393855D20F8BB0C1C2FDB0FF2292 /* BEMCheckBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F37F16A9BC35C210E315B85E421D798 /* BEMCheckBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC911203328B3247D8B11F5ED49DED45 /* BEMAnimationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EC040FB2A263D249B92793C3AD05767E /* BEMAnimationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F77FEB669B94C63E644D37831F5FFB79 /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B31D8C056138C75FD14D7679EAEC1D60 /* BEMPathManager.m */; };
+		FADAF24ECADC039A44E837C89865592C /* CBZVectorSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F05402736FE572296859BFC9E1E5C3 /* CBZVectorSplashView.m */; };
+		FDEED7A2F24FEF102F1277920A4AF709 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AA4110233B73D31F15D4BE2D4C86BC2C /* PBXContainerItemProxy */ = {
+		603A6E049736915881A724058F3277A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C80F913EE213FA1EE3801FF8CEF0DD4;
+			remoteInfo = BEMCheckBox;
+		};
+		A3D8A27A2A873E0D4266669F7D97BBB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -30,29 +45,55 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		11C52F13A155FCCC8845753744711CCF /* CBZSplashView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBZSplashView.h; path = Pod/Classes/CBZSplashView.h; sourceTree = "<group>"; };
-		1CB70FFEE9EA5E330C40F3E6EC2FDA1E /* libPods-AGHacks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AGHacks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		348EC858990408404C8966C377C32715 /* CBZSplashView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CBZSplashView.xcconfig; sourceTree = "<group>"; };
+		0169BBC44A1A6FA6B9CF97F366360838 /* CBZSplashView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CBZSplashView.xcconfig; sourceTree = "<group>"; };
+		18A067B599A9BF0071662C156463B7B7 /* CBZSplashView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CBZSplashView-prefix.pch"; sourceTree = "<group>"; };
+		1CBAFA7FD11408E9FA77E8A8BD8266D5 /* CBZRasterSplashView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CBZRasterSplashView.m; path = Pod/Classes/CBZRasterSplashView.m; sourceTree = "<group>"; };
+		365CD475308A5095EACA05D83CF6E979 /* CBZSplashView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CBZSplashView-dummy.m"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3F37F16A9BC35C210E315B85E421D798 /* BEMCheckBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMCheckBox.h; path = Classes/BEMCheckBox.h; sourceTree = "<group>"; };
 		412CEE4007A0EF8479F744587178F996 /* Pods-AGHacks-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AGHacks-frameworks.sh"; sourceTree = "<group>"; };
 		46FEC2870A023AE144EFFF7A5D0BE95A /* Pods-AGHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AGHacks.debug.xcconfig"; sourceTree = "<group>"; };
+		49596255A6107E8B135669C3A1747035 /* libBEMCheckBox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBEMCheckBox.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5795A7AE74BD3A05E5E42CDCBE119425 /* CBZRasterSplashView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBZRasterSplashView.h; path = Pod/Classes/CBZRasterSplashView.h; sourceTree = "<group>"; };
+		57ED5573F27DFE9A7FC1E58C12D1FE65 /* CBZSplashView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBZSplashView.h; path = Pod/Classes/CBZSplashView.h; sourceTree = "<group>"; };
 		66207160E54D0CFAF13C7CE509AF59C3 /* Pods-AGHacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AGHacks.release.xcconfig"; sourceTree = "<group>"; };
 		676FE52584F3A99B82E87782F09EA3D6 /* Pods-AGHacks-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AGHacks-acknowledgements.markdown"; sourceTree = "<group>"; };
+		810B0E6F76FE30A3BB3274766FC41BCC /* libCBZSplashView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCBZSplashView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		820E2594C119653622B7078CC0D1A7B6 /* Pods-AGHacks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AGHacks-dummy.m"; sourceTree = "<group>"; };
 		8370BE67C012C64FE4DA900E8911D754 /* Pods-AGHacks-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AGHacks-resources.sh"; sourceTree = "<group>"; };
-		9AB9C6F95929A7E2EFFDB9ACAA7F1B99 /* CBZSplashView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CBZSplashView-dummy.m"; sourceTree = "<group>"; };
-		9C0F56352738273AA4D6132F728CD226 /* CBZVectorSplashView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBZVectorSplashView.h; path = Pod/Classes/CBZVectorSplashView.h; sourceTree = "<group>"; };
-		AA73F8460DD11F3046F119F450EBF0A4 /* CBZRasterSplashView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBZRasterSplashView.h; path = Pod/Classes/CBZRasterSplashView.h; sourceTree = "<group>"; };
-		B2AA9281803D3D9C46E6B90A51732F61 /* libCBZSplashView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCBZSplashView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2DDDE979035280FB4BA0331D2AEF25F /* CBZSplashView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CBZSplashView-prefix.pch"; sourceTree = "<group>"; };
-		B84BBD72439FA317FF8B5171312B467E /* CBZRasterSplashView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CBZRasterSplashView.m; path = Pod/Classes/CBZRasterSplashView.m; sourceTree = "<group>"; };
+		879B2CFD70813A436BE7D311D46D7C8C /* CBZSplashView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CBZSplashView.m; path = Pod/Classes/CBZSplashView.m; sourceTree = "<group>"; };
+		916A6962262B1B93BC7348711E724500 /* BEMCheckBox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BEMCheckBox.xcconfig; sourceTree = "<group>"; };
+		97984F166B4688C058A37EECCD142547 /* libPods-AGHacks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AGHacks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60FC7E39491E33C465A888A64A16566 /* BEMCheckBox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMCheckBox.m; path = Classes/BEMCheckBox.m; sourceTree = "<group>"; };
+		AC87021D6BD86679B34BC484ED6864F3 /* CBZVectorSplashView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBZVectorSplashView.h; path = Pod/Classes/CBZVectorSplashView.h; sourceTree = "<group>"; };
+		B31D8C056138C75FD14D7679EAEC1D60 /* BEMPathManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMPathManager.m; path = Classes/BEMPathManager.m; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C4DCEDE3405495502A4101F9D5F37D20 /* CBZSplashView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CBZSplashView.m; path = Pod/Classes/CBZSplashView.m; sourceTree = "<group>"; };
+		BFC2A92AABA50738CCEDE3384FAF989D /* BEMCheckBox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BEMCheckBox-dummy.m"; sourceTree = "<group>"; };
+		D3F05402736FE572296859BFC9E1E5C3 /* CBZVectorSplashView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CBZVectorSplashView.m; path = Pod/Classes/CBZVectorSplashView.m; sourceTree = "<group>"; };
 		DC41C7A228F3A6B1589901025AFE48ED /* Pods-AGHacks-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AGHacks-acknowledgements.plist"; sourceTree = "<group>"; };
-		FBE7CDCCF991D33D610F03B93E45BF21 /* CBZVectorSplashView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CBZVectorSplashView.m; path = Pod/Classes/CBZVectorSplashView.m; sourceTree = "<group>"; };
+		EA0D29300A3F44AFD7F6EFF5B179C7C7 /* BEMAnimationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMAnimationManager.m; path = Classes/BEMAnimationManager.m; sourceTree = "<group>"; };
+		EC040FB2A263D249B92793C3AD05767E /* BEMAnimationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMAnimationManager.h; path = Classes/BEMAnimationManager.h; sourceTree = "<group>"; };
+		FBE17DDD362EEBA4A952007A07B8326B /* BEMCheckBox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEMCheckBox-prefix.pch"; sourceTree = "<group>"; };
+		FC318EC054086CD41AF5C5574BDDB565 /* BEMPathManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMPathManager.h; path = Classes/BEMPathManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1E4FD2E0659A6A94649778784E2C0274 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115E185960522674097F9064AE1033B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747FCEE73D6A15F6BACAF046214E83FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDEED7A2F24FEF102F1277920A4AF709 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE0703A4220C31C17693D38BC4177F4A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,32 +102,62 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE424327E6BC27D08285C66B9DEF2425 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8766C5A3F94414E472F42ED83106C37D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C28CBDF2C01317088ED9944C1886D6C /* Products */ = {
+		17B4C829029F072240FBDB228FD0FF48 /* CBZSplashView */ = {
 			isa = PBXGroup;
 			children = (
-				B2AA9281803D3D9C46E6B90A51732F61 /* libCBZSplashView.a */,
-				1CB70FFEE9EA5E330C40F3E6EC2FDA1E /* libPods-AGHacks.a */,
+				5795A7AE74BD3A05E5E42CDCBE119425 /* CBZRasterSplashView.h */,
+				1CBAFA7FD11408E9FA77E8A8BD8266D5 /* CBZRasterSplashView.m */,
+				57ED5573F27DFE9A7FC1E58C12D1FE65 /* CBZSplashView.h */,
+				879B2CFD70813A436BE7D311D46D7C8C /* CBZSplashView.m */,
+				AC87021D6BD86679B34BC484ED6864F3 /* CBZVectorSplashView.h */,
+				D3F05402736FE572296859BFC9E1E5C3 /* CBZVectorSplashView.m */,
+				798240B8E8FA1179CC482E0EE22C9AA8 /* Support Files */,
+			);
+			path = CBZSplashView;
+			sourceTree = "<group>";
+		};
+		1B527A22C15334060A1DEE44845B58DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B47281317EC948581D313595FBC225E /* BEMCheckBox */,
+				17B4C829029F072240FBDB228FD0FF48 /* CBZSplashView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		27B6BE0EC76761DEA93742CED4231823 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49596255A6107E8B135669C3A1747035 /* libBEMCheckBox.a */,
+				810B0E6F76FE30A3BB3274766FC41BCC /* libCBZSplashView.a */,
+				97984F166B4688C058A37EECCD142547 /* libPods-AGHacks.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6FE1A88D326E5DECD59237A94963D7A8 /* Support Files */ = {
+		4B47281317EC948581D313595FBC225E /* BEMCheckBox */ = {
 			isa = PBXGroup;
 			children = (
-				348EC858990408404C8966C377C32715 /* CBZSplashView.xcconfig */,
-				9AB9C6F95929A7E2EFFDB9ACAA7F1B99 /* CBZSplashView-dummy.m */,
-				B2DDDE979035280FB4BA0331D2AEF25F /* CBZSplashView-prefix.pch */,
+				EC040FB2A263D249B92793C3AD05767E /* BEMAnimationManager.h */,
+				EA0D29300A3F44AFD7F6EFF5B179C7C7 /* BEMAnimationManager.m */,
+				3F37F16A9BC35C210E315B85E421D798 /* BEMCheckBox.h */,
+				A60FC7E39491E33C465A888A64A16566 /* BEMCheckBox.m */,
+				FC318EC054086CD41AF5C5574BDDB565 /* BEMPathManager.h */,
+				B31D8C056138C75FD14D7679EAEC1D60 /* BEMPathManager.m */,
+				DBFCECEFEA2414B88C01A8C5A4A027E8 /* Support Files */,
+			);
+			path = BEMCheckBox;
+			sourceTree = "<group>";
+		};
+		798240B8E8FA1179CC482E0EE22C9AA8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0169BBC44A1A6FA6B9CF97F366360838 /* CBZSplashView.xcconfig */,
+				365CD475308A5095EACA05D83CF6E979 /* CBZSplashView-dummy.m */,
+				18A067B599A9BF0071662C156463B7B7 /* CBZSplashView-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CBZSplashView";
@@ -97,8 +168,8 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				D8C2B013F15BAC7C6B9CFD6BAF1F8E29 /* Pods */,
-				1C28CBDF2C01317088ED9944C1886D6C /* Products */,
+				1B527A22C15334060A1DEE44845B58DC /* Pods */,
+				27B6BE0EC76761DEA93742CED4231823 /* Products */,
 				D347702A0F25F64F761F809D09A99DC8 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -142,26 +213,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D8C2B013F15BAC7C6B9CFD6BAF1F8E29 /* Pods */ = {
+		DBFCECEFEA2414B88C01A8C5A4A027E8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E09C32676FB92162D59DBABFBA27EEB4 /* CBZSplashView */,
+				916A6962262B1B93BC7348711E724500 /* BEMCheckBox.xcconfig */,
+				BFC2A92AABA50738CCEDE3384FAF989D /* BEMCheckBox-dummy.m */,
+				FBE17DDD362EEBA4A952007A07B8326B /* BEMCheckBox-prefix.pch */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E09C32676FB92162D59DBABFBA27EEB4 /* CBZSplashView */ = {
-			isa = PBXGroup;
-			children = (
-				AA73F8460DD11F3046F119F450EBF0A4 /* CBZRasterSplashView.h */,
-				B84BBD72439FA317FF8B5171312B467E /* CBZRasterSplashView.m */,
-				11C52F13A155FCCC8845753744711CCF /* CBZSplashView.h */,
-				C4DCEDE3405495502A4101F9D5F37D20 /* CBZSplashView.m */,
-				9C0F56352738273AA4D6132F728CD226 /* CBZVectorSplashView.h */,
-				FBE7CDCCF991D33D610F03B93E45BF21 /* CBZVectorSplashView.m */,
-				6FE1A88D326E5DECD59237A94963D7A8 /* Support Files */,
-			);
-			path = CBZSplashView;
+			name = "Support Files";
+			path = "../Target Support Files/BEMCheckBox";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +237,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63FBB7A4A44B9329E9359F67B4365B98 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC911203328B3247D8B11F5ED49DED45 /* BEMAnimationManager.h in Headers */,
+				D1D5393855D20F8BB0C1C2FDB0FF2292 /* BEMCheckBox.h in Headers */,
+				CEE9FF1F2D926ACD9F533F020A45266F /* BEMPathManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		8C80F913EE213FA1EE3801FF8CEF0DD4 /* BEMCheckBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 955F5F0255011485D01CBE8E153B3757 /* Build configuration list for PBXNativeTarget "BEMCheckBox" */;
+			buildPhases = (
+				A2805C0188FE2EC26941C41D02F6CB8B /* Sources */,
+				747FCEE73D6A15F6BACAF046214E83FD /* Frameworks */,
+				63FBB7A4A44B9329E9359F67B4365B98 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BEMCheckBox;
+			productName = BEMCheckBox;
+			productReference = 49596255A6107E8B135669C3A1747035 /* libBEMCheckBox.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		A050E537B3F45BD39D3B0577AA4AD302 /* CBZSplashView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04BB0093370151E57A3AF85913B111C7 /* Build configuration list for PBXNativeTarget "CBZSplashView" */;
@@ -194,24 +281,25 @@
 			);
 			name = CBZSplashView;
 			productName = CBZSplashView;
-			productReference = B2AA9281803D3D9C46E6B90A51732F61 /* libCBZSplashView.a */;
+			productReference = 810B0E6F76FE30A3BB3274766FC41BCC /* libCBZSplashView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		CD02AA7E1A929C293247279EB43D74FB /* Pods-AGHacks */ = {
+		F4F2F51901C9C46FFA2953F65FF68332 /* Pods-AGHacks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D772A010D848580CB3EEDBA619540B53 /* Build configuration list for PBXNativeTarget "Pods-AGHacks" */;
+			buildConfigurationList = 9585EBA90BF46FC3172C74868B6D0B39 /* Build configuration list for PBXNativeTarget "Pods-AGHacks" */;
 			buildPhases = (
-				4B6BC6014338C1BF75D2A20A4710FA1B /* Sources */,
-				FE424327E6BC27D08285C66B9DEF2425 /* Frameworks */,
+				DA134356713FE4F0146C6CABB5FDAEB8 /* Sources */,
+				1E4FD2E0659A6A94649778784E2C0274 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				552A2A9A432C497C80F3CCF7731B9299 /* PBXTargetDependency */,
+				74831E45B580A80360A34A6227EB005C /* PBXTargetDependency */,
+				BFC25B7F22096D7DBFB6EC1FE57FCA4E /* PBXTargetDependency */,
 			);
 			name = "Pods-AGHacks";
 			productName = "Pods-AGHacks";
-			productReference = 1CB70FFEE9EA5E330C40F3E6EC2FDA1E /* libPods-AGHacks.a */;
+			productReference = 97984F166B4688C058A37EECCD142547 /* libPods-AGHacks.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -231,25 +319,18 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 1C28CBDF2C01317088ED9944C1886D6C /* Products */;
+			productRefGroup = 27B6BE0EC76761DEA93742CED4231823 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				8C80F913EE213FA1EE3801FF8CEF0DD4 /* BEMCheckBox */,
 				A050E537B3F45BD39D3B0577AA4AD302 /* CBZSplashView */,
-				CD02AA7E1A929C293247279EB43D74FB /* Pods-AGHacks */,
+				F4F2F51901C9C46FFA2953F65FF68332 /* Pods-AGHacks */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4B6BC6014338C1BF75D2A20A4710FA1B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1241739CAECA518C55EA7B16D09A2500 /* Pods-AGHacks-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8565CF7E48D39B4551CE4322F45D1543 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,21 +342,80 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A2805C0188FE2EC26941C41D02F6CB8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C695A44B2F0B402B4D9ABEBCECEDFB6 /* BEMAnimationManager.m in Sources */,
+				1566A3BF6977BD666050CB55471A2676 /* BEMCheckBox-dummy.m in Sources */,
+				A9D1DF131554FFF23F0C3B55FE73E948 /* BEMCheckBox.m in Sources */,
+				F77FEB669B94C63E644D37831F5FFB79 /* BEMPathManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA134356713FE4F0146C6CABB5FDAEB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D81FB111B88EDA8FA1E2E8342667A1B /* Pods-AGHacks-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		552A2A9A432C497C80F3CCF7731B9299 /* PBXTargetDependency */ = {
+		74831E45B580A80360A34A6227EB005C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BEMCheckBox;
+			target = 8C80F913EE213FA1EE3801FF8CEF0DD4 /* BEMCheckBox */;
+			targetProxy = 603A6E049736915881A724058F3277A5 /* PBXContainerItemProxy */;
+		};
+		BFC25B7F22096D7DBFB6EC1FE57FCA4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CBZSplashView;
 			target = A050E537B3F45BD39D3B0577AA4AD302 /* CBZSplashView */;
-			targetProxy = AA4110233B73D31F15D4BE2D4C86BC2C /* PBXContainerItemProxy */;
+			targetProxy = A3D8A27A2A873E0D4266669F7D97BBB7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		4C1635B6EDC57339053C43D172EA4FF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46FEC2870A023AE144EFFF7A5D0BE95A /* Pods-AGHacks.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		509F70AEDE86BC7FB93B11FF4753EEDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66207160E54D0CFAF13C7CE509AF59C3 /* Pods-AGHacks.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		8ED8034D68F6EB921EEECB8D4B90A811 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 348EC858990408404C8966C377C32715 /* CBZSplashView.xcconfig */;
+			baseConfigurationReference = 0169BBC44A1A6FA6B9CF97F366360838 /* CBZSplashView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/CBZSplashView/CBZSplashView-prefix.pch";
@@ -293,7 +433,7 @@
 		};
 		95B3C6CFA2F9BE29B92AA9533E553F61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 348EC858990408404C8966C377C32715 /* CBZSplashView.xcconfig */;
+			baseConfigurationReference = 0169BBC44A1A6FA6B9CF97F366360838 /* CBZSplashView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/CBZSplashView/CBZSplashView-prefix.pch";
@@ -348,39 +488,41 @@
 			};
 			name = Debug;
 		};
-		C35329428083D1DCB4B256AFC72BAF41 /* Release */ = {
+		B6B90510077B98D6FC87049343C2C8E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66207160E54D0CFAF13C7CE509AF59C3 /* Pods-AGHacks.release.xcconfig */;
+			baseConfigurationReference = 916A6962262B1B93BC7348711E724500 /* BEMCheckBox.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BEMCheckBox/BEMCheckBox-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		F069F2D6CEFFEA4601B3796B3C7CC25D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46FEC2870A023AE144EFFF7A5D0BE95A /* Pods-AGHacks.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
+		};
+		FAE74E1FD186F4BB994D56821C7E172C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 916A6962262B1B93BC7348711E724500 /* BEMCheckBox.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BEMCheckBox/BEMCheckBox-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
 		};
 		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -437,11 +579,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D772A010D848580CB3EEDBA619540B53 /* Build configuration list for PBXNativeTarget "Pods-AGHacks" */ = {
+		955F5F0255011485D01CBE8E153B3757 /* Build configuration list for PBXNativeTarget "BEMCheckBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F069F2D6CEFFEA4601B3796B3C7CC25D /* Debug */,
-				C35329428083D1DCB4B256AFC72BAF41 /* Release */,
+				B6B90510077B98D6FC87049343C2C8E3 /* Debug */,
+				FAE74E1FD186F4BB994D56821C7E172C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9585EBA90BF46FC3172C74868B6D0B39 /* Build configuration list for PBXNativeTarget "Pods-AGHacks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C1635B6EDC57339053C43D172EA4FF6 /* Debug */,
+				509F70AEDE86BC7FB93B11FF4753EEDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

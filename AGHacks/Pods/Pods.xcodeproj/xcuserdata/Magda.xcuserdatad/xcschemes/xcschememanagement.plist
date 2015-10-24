@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BEMCheckBox.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>CBZSplashView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>8C80F913EE213FA1EE3801FF8CEF0DD4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A050E537B3F45BD39D3B0577AA4AD302</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CD02AA7E1A929C293247279EB43D74FB</key>
+		<key>F4F2F51901C9C46FFA2953F65FF68332</key>
 		<dict>
 			<key>primary</key>
 			<true/>

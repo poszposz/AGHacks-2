@@ -25,7 +25,7 @@
 		03479257620B0499A9D8FA2E /* Pods-AGHacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGHacks.release.xcconfig"; path = "Pods/Target Support Files/Pods-AGHacks/Pods-AGHacks.release.xcconfig"; sourceTree = "<group>"; };
 		1384BE40510ACA761349E653 /* libPods-AGHacks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AGHacks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D9F1D0B9373DD06AA8F1527 /* Pods-AGHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGHacks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AGHacks/Pods-AGHacks.debug.xcconfig"; sourceTree = "<group>"; };
-		95231F061BDADD110060776C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		95231F061BDADD110060776C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95231F081BDAE35F0060776C /* LoaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoaderViewController.h; sourceTree = "<group>"; };
 		95231F091BDAE35F0060776C /* LoaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoaderViewController.m; sourceTree = "<group>"; };
 		95231F0B1BDAE6470060776C /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
@@ -368,6 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AGHacks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vorm.AGHacks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -380,6 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AGHacks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vorm.AGHacks;
 				PRODUCT_NAME = "$(TARGET_NAME)";

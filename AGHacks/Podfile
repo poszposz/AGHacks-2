@@ -6,6 +6,7 @@
 target 'AGHacks' do
 
 pod 'CBZSplashView', '~> 1.0.0'
+pod 'BEMCheckBox'
 
 end
 

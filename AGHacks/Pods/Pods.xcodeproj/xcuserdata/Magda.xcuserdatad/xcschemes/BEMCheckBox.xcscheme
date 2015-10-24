@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DA9F12547A7C5635D6A01BA9'
-               BlueprintName = 'CBZSplashView'
+               BlueprintIdentifier = 'C811C632EACC1C543EBD20CD'
+               BlueprintName = 'BEMCheckBox'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libCBZSplashView.a'>
+               BuildableName = 'libBEMCheckBox.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

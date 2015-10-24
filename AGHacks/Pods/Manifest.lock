@@ -1,10 +1,13 @@
 PODS:
+  - BEMCheckBox (1.1.0)
   - CBZSplashView (1.0.0)
 
 DEPENDENCIES:
+  - BEMCheckBox
   - CBZSplashView (~> 1.0.0)
 
 SPEC CHECKSUMS:
+  BEMCheckBox: abb7b1ffcc24c25c31ffa7b7167a3e869f4f15ba
   CBZSplashView: 9ce4cba22024476ff4a97d6433e7347da6376016
 
 COCOAPODS: 0.39.0
