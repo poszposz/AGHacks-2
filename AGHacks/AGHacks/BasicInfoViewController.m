@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupCheckboxes];
+    self.ageTextField.delegate = self;
+    self.priceTextField.delegate = self;
     self.female.delegate = self;
     self.male.delegate = self;
     self.isPracticalCheckbox.delegate = self;
@@ -35,6 +37,14 @@
     
 }
 
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    if (textField == self.ageTextField) {
+        getApp().choice.selectedAge = [NSNumber numberWithInt:[self.ageTextField.text intValue]];
+    }
+    else if (textField == self.priceTextField) {
+        getApp().choice.selectedMaxPrice = [NSNumber numberWithInt:[self.priceTextField.text intValue]];
+    }
+}
 
 -(void)viewWillAppear:(BOOL)animated {
     [[self navigationController] setNavigationBarHidden:YES];
@@ -56,7 +66,6 @@
         getApp().choice.selectedGender = GenderMan;
         self.female.on = NO;
     }
-    
     if (checkBox == self.isPracticalCheckbox) {
         getApp().choice.practical = YES;
     }

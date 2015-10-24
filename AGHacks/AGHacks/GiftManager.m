@@ -63,12 +63,26 @@
     self.gifts = @[g1, g2, g3, g4, g5, g6, g7, g8, g9, g10, g11, g12, g13, g14, g15, g16, g17, g18, g19, g20];
 }
 
-- (NSArray *)fetchGiftsWithGender:(Gender)gender age:(NSNumber *)age price:(NSNumber *)price interest:(NSArray *)interests characters:(NSArray *)characters practical:(BOOL)practical {
+- (NSArray *)fetchGiftsForChoice:(ChoiceModel *)choice {
+    return [self fetchGiftsWithGender:choice.selectedGender age:choice.selectedAge price:choice.selectedMaxPrice interests:choice.selectedInterests characters:choice.selectedCharacters practical:choice.practical];
+}
+
+- (NSArray *)fetchGiftsWithGender:(Gender)gender age:(NSNumber *)age price:(NSNumber *)price interests:(NSArray *)interests characters:(NSArray *)characters practical:(BOOL)practical {
     
     NSMutableArray *accurateGifts = [@[] mutableCopy];
     for (Gift *gift in self.gifts) {
-        if (gift.gender == gender && [interests containsObject:[NSNumber numberWithInt:gift.interest]] && [characters containsObject:[NSNumber numberWithInt:gift.character]] && gift.practical == practical && gift.minAge.intValue <= age.intValue && gift.maxAge.intValue >= gift.maxAge.intValue && abs(gift.price.intValue - price.intValue) < kDefaultPriceRange) {
-            [accurateGifts addObject:gift];
+        if (gift.gender == gender || gift.gender == GenderUniversal) {
+            if ([interests containsObject:[NSNumber numberWithInt:gift.interest]] || gift.interest == InterestUniversal) {
+                if ([characters containsObject:[NSNumber numberWithInt:gift.character]] || gift.character == CharacterUniversal) {
+                    if (gift.practical == practical) {
+                        if (gift.minAge.intValue <= age.intValue && gift.maxAge.intValue >= gift.maxAge.intValue) {
+                            if (gift.price.intValue <= price.intValue) {
+                                [accurateGifts addObject:gift];
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     return [accurateGifts copy];

@@ -10,9 +10,12 @@
 #import "BEMCheckBox.h"
 #import "AppDelegate.h"
 
-@interface BasicInfoViewController : UIViewController <BEMCheckBoxDelegate>
+@interface BasicInfoViewController : UIViewController <BEMCheckBoxDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet BEMCheckBox *female;
 @property (weak, nonatomic) IBOutlet BEMCheckBox *male;
 @property (weak, nonatomic) IBOutlet BEMCheckBox *isPracticalCheckbox;
+
+@property (weak, nonatomic) IBOutlet UITextField *ageTextField;
+@property (weak, nonatomic) IBOutlet UITextField *priceTextField;
 
 @end

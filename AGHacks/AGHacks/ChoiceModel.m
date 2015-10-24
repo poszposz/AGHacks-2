@@ -14,8 +14,7 @@
     self.selectedAge = nil;
     self.selectedCharacters = nil;
     self.selectedInterests = nil;
-    self.selectedGender = nil;
-    self.selectedMinPrice = nil;
+    self.selectedGender = 0;
     self.selectedMaxPrice = nil;
     self.practical = NO;
 }

@@ -66,7 +66,10 @@ static NSString *cellIdentifier = @"characterCellIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     Character character = [[self.characterTypes objectAtIndex:indexPath.row] intValue];
     cell.textLabel.text = [GiftManager stringValueForCharacter:character];
-    cell.textLabel.textAlignment = NSTextAlignmentCenter;
+    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:17];
+    cell.backgroundColor = [UIColor lightGrayColor];
+    [self setupBackgroundViewForCell:cell];
     
     return cell;
 }

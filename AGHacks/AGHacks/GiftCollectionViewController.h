@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "GiftManager.h"
+#import "AppDelegate.h"
 
 @interface GiftCollectionViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
 

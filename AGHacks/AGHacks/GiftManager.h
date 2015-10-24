@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "Gift.h"
+#import "ChoiceModel.h"
 
 @interface GiftManager : NSObject
 
-- (NSArray *)fetchGiftsWithGender:(Gender)gender age:(NSNumber *)age price:(NSNumber *)price interests:(NSArray *)interests characters:(NSArray *)characters practical:(BOOL)practical;
+- (NSArray *)fetchGiftsForChoice:(ChoiceModel *)choice;
 
 - (void)createDefaultGifts;
 

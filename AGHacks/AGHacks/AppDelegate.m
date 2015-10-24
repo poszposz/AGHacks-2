@@ -18,6 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.giftManager = [[GiftManager alloc] init];
+    [self.giftManager createDefaultGifts];
     self.choice = [ChoiceModel new];
     
     return YES;

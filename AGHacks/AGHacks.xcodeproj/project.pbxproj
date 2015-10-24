@@ -388,7 +388,7 @@
 				951CD2F71BDBC2F2009239AD /* InterestsViewController.m in Sources */,
 				95231F131BDAF1B60060776C /* MainViewController.m in Sources */,
 				95231F0A1BDAE35F0060776C /* LoaderViewController.m in Sources */,
-				9FDB68951BDBEA5A00A50118 /* SelectionResultViewController.m in Sources */,
+				951CD3051BDC0608009239AD /* GiftCollectionViewController.m in Sources */,
 				95231F101BDAE6660060776C /* UIBezierPath+Shapes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

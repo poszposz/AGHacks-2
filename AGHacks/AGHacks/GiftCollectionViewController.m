@@ -8,7 +8,11 @@
 
 #import "GiftCollectionViewController.h"
 
+static NSString *colCellId = @"cellid";
+
 @interface GiftCollectionViewController ()
+
+@property (nonatomic, strong) NSArray *gatheredGifts;
 
 @end
 
@@ -16,9 +20,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    //self.giftCollectionView.delegate = self;
-    //self.giftCollectionView.dataSource = self;
+    
+    self.gatheredGifts = [getApp().giftManager fetchGiftsForChoice:getApp().choice];
+    NSLog(@"%@", self.gatheredGifts);
+    self.giftCollectionView.delegate = self;
+    self.giftCollectionView.dataSource = self;
+    
+    [self.giftCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:colCellId];
 }
 
 -(void)goToMapDidClick:(id)sender {
@@ -30,14 +38,21 @@
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.possibleGifts.count;
+    return self.gatheredGifts.count;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:colCellId forIndexPath:indexPath];
     
-    //UILabel *giftName = (UILabel *)[cell viewForBaselineLayout]
+    Gift *gift = [self.gatheredGifts objectAtIndex:indexPath.row];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:cell.bounds];
+    label.textColor = [UIColor greenColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.font = [UIFont boldSystemFontOfSize:12];
+    label.text = gift.name;
+    [cell.contentView addSubview:label];
     [cell.layer setBorderWidth:2.0f];
     [cell.layer setBorderColor:[UIColor whiteColor].CGColor];
     [cell.layer setCornerRadius:50.0f];

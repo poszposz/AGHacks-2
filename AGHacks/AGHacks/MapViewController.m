@@ -25,16 +25,13 @@
     [self.mapView setDelegate:self];
     self.manager = [[CLLocationManager alloc] init];
     self.manager.delegate = self;
-    
-#ifdef __IPHONE_8_0
-    if(IS_OS_8_OR_LATER) {
+
+    if([self.manager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
         [self.manager requestWhenInUseAuthorization];
     }
-#endif
     [self.manager startUpdatingLocation];
     
     self.mapView.showsUserLocation = YES;
-
 }
 
 - (void)didReceiveMemoryWarning {

@@ -15,7 +15,6 @@
 @property (nonatomic, strong) NSArray *selectedInterests;
 @property (nonatomic, assign) Gender selectedGender;
 @property (nonatomic, strong) NSNumber *selectedAge;
-@property (nonatomic, strong) NSNumber *selectedMinPrice;
 @property (nonatomic, strong) NSNumber *selectedMaxPrice;
 @property (nonatomic, assign) BOOL practical;
 
