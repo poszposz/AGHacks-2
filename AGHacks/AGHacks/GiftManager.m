@@ -71,21 +71,60 @@
     
     NSMutableArray *accurateGifts = [@[] mutableCopy];
     for (Gift *gift in self.gifts) {
-        if (gift.gender == gender || gift.gender == GenderUniversal) {
-            if ([interests containsObject:[NSNumber numberWithInt:gift.interest]] || gift.interest == InterestUniversal) {
-                if ([characters containsObject:[NSNumber numberWithInt:gift.character]] || gift.character == CharacterUniversal) {
-                    if (gift.practical == practical) {
-                        if (gift.minAge.intValue <= age.intValue && gift.maxAge.intValue >= gift.maxAge.intValue) {
-                            if (gift.price.intValue <= price.intValue) {
-                                [accurateGifts addObject:gift];
-                            }
-                        }
-                    }
-                }
-            }
+        
+        if ([self hasRightGender:gender gift:gift] &&
+            [self hasRightInterests:interests gift:gift] &&
+            [self hasRightCharacterTypes:characters gift:gift] &&
+            [self hasRightAge:age gift:gift] &&
+            [self hasRightPrice:price gift:gift] &&
+            [self hasRightPracticality:practical gift:gift]) {
+            
+            [accurateGifts addObject:gift];
         }
     }
     return [accurateGifts copy];
+}
+
+- (BOOL)hasRightGender:(Gender)gender gift:(Gift *)gift {
+    if (gift.gender == gender || gift.gender == GenderUniversal) {
+        return YES;
+    }
+    return NO;
+}
+
+- (BOOL)hasRightInterests:(NSArray *)interests gift:(Gift *)gift {
+    if ([interests containsObject:[NSNumber numberWithInt:gift.interest]] || gift.interest == InterestUniversal) {
+        return YES;
+    }
+    return NO;
+}
+
+- (BOOL)hasRightCharacterTypes:(NSArray *)characterTypes gift:(Gift *)gift {
+    if ([characterTypes containsObject:[NSNumber numberWithInt:gift.character]] || gift.character == CharacterUniversal) {
+        return YES;
+    }
+    return NO;
+}
+
+- (BOOL)hasRightPracticality:(BOOL)practicality gift:(Gift *)gift {
+    if (gift.practical == practicality) {
+        return YES;
+    }
+    return NO;
+}
+
+- (BOOL)hasRightPrice:(NSNumber *)price gift:(Gift *)gift {
+    if (gift.price.intValue <= price.intValue) {
+        return YES;
+    }
+    return NO;
+}
+
+- (BOOL)hasRightAge:(NSNumber *)age gift:(Gift *)gift {
+    if (gift.minAge.intValue <= age.intValue && gift.maxAge.intValue >= gift.maxAge.intValue) {
+        return YES;
+    }
+    return NO;
 }
 
 // MARK interest utility
@@ -193,3 +232,17 @@
 }
 
 @end
+
+//if (gift.gender == gender || gift.gender == GenderUniversal) {
+//    if ([interests containsObject:[NSNumber numberWithInt:gift.interest]] || gift.interest == InterestUniversal) {
+//        if ([characters containsObject:[NSNumber numberWithInt:gift.character]] || gift.character == CharacterUniversal) {
+//            if (gift.practical == practical) {
+//                if (gift.minAge.intValue <= age.intValue && gift.maxAge.intValue >= gift.maxAge.intValue) {
+//                    if (gift.price.intValue <= price.intValue) {
+//                        [accurateGifts addObject:gift];
+//                    }
+//                }
+//            }
+//        }
+//    }
+//}
