@@ -84,6 +84,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		951CD2F01BDBB6DB009239AD /* BasicInfo */ = {
+			isa = PBXGroup;
+			children = (
+				95231F141BDB03390060776C /* BasicInfoViewController.h */,
+				95231F151BDB03390060776C /* BasicInfoViewController.m */,
+			);
+			name = BasicInfo;
+			sourceTree = "<group>";
+		};
+		951CD2F11BDBB6EB009239AD /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				95231F0B1BDAE6470060776C /* UIColor+HexString.h */,
+				95231F0C1BDAE6470060776C /* UIColor+HexString.m */,
+				95231F0E1BDAE6660060776C /* UIBezierPath+Shapes.h */,
+				95231F0F1BDAE6660060776C /* UIBezierPath+Shapes.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		9F3BE6B61BDA71660020F023 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +126,8 @@
 		9F3BE6C11BDA71660020F023 /* AGHacks */ = {
 			isa = PBXGroup;
 			children = (
+				951CD2F11BDBB6EB009239AD /* Categories */,
+				951CD2F01BDBB6DB009239AD /* BasicInfo */,
 				9F3BE6C51BDA71660020F023 /* AppDelegate.h */,
 				9F3BE6C61BDA71660020F023 /* AppDelegate.m */,
 				9F3BE6C81BDA71660020F023 /* ViewController.h */,
