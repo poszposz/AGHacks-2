@@ -59,7 +59,7 @@
              [NSNumber numberWithInt:InterestSport]
              ];
 }
-
+ 
 + (NSString *)stringValueForinterest:(Interest)interest {
     switch (interest) {
         case InterestUniversal:

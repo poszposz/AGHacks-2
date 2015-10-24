@@ -25,6 +25,7 @@ static NSString *cellIdentifier = @"characterCellIdentifier";
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.backgroundColor = [UIColor lightGrayColor];
     
     self.selectedCharacterTypes = [@[] mutableCopy];
     
@@ -44,6 +45,12 @@ static NSString *cellIdentifier = @"characterCellIdentifier";
     // prefirm some segue here :)
 }
 
+-(void)setupBackgroundViewForCell:(UITableViewCell *)cell {
+    UIView *view = [[UIView alloc]initWithFrame:cell.bounds];
+    view.backgroundColor = [UIColor darkGrayColor];
+    cell.selectedBackgroundView = view;
+}
+
 //MARK: table view
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -59,6 +66,8 @@ static NSString *cellIdentifier = @"characterCellIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     Character character = [[self.characterTypes objectAtIndex:indexPath.row] intValue];
     cell.textLabel.text = [GiftManager stringValueForCharacter:character];
+    cell.backgroundColor = [UIColor lightGrayColor];
+    [self setupBackgroundViewForCell:cell];
     
     return cell;
 }

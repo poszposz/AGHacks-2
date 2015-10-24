@@ -28,6 +28,7 @@ static NSString *cellIdentifier = @"cellIdentifier";
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.backgroundColor = [UIColor lightGrayColor];
     
     self.interests = [GiftManager allInterests];
     
@@ -38,6 +39,12 @@ static NSString *cellIdentifier = @"cellIdentifier";
     // handle saving selected data
     [getApp().choice setSelectedInterests:self.selectedInterests];
     [self performSegueWithIdentifier:@"characterSegue" sender:self];
+}
+
+-(void)setupBackgroundViewForCell:(UITableViewCell *)cell {
+    UIView *view = [[UIView alloc]initWithFrame:cell.bounds];
+    view.backgroundColor = [UIColor darkGrayColor];
+    cell.selectedBackgroundView = view;
 }
 
 // MARK: tableView
@@ -55,6 +62,8 @@ static NSString *cellIdentifier = @"cellIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     Interest interest = [[self.interests objectAtIndex:indexPath.row] intValue];
     cell.textLabel.text = [GiftManager stringValueForinterest:interest];
+    cell.backgroundColor = [UIColor lightGrayColor];
+    [self setupBackgroundViewForCell:cell];
     
     return cell;
 }
