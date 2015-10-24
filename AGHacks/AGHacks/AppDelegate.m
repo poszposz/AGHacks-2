@@ -46,3 +46,7 @@
 }
 
 @end
+
+extern AppDelegate *getApp(void) {
+    return (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
