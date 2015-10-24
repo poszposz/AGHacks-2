@@ -12,7 +12,10 @@
 @interface BasicInfoViewController : UIViewController
 @property (weak, nonatomic) IBOutlet BEMCheckBox *female;
 @property (weak, nonatomic) IBOutlet BEMCheckBox *male;
+@property (weak, nonatomic) IBOutlet BEMCheckBox *isPracticalCheckbox;
 
-@property (nonatomic, strong) IBOutletCollection(BEMCheckBox) NSArray *allCheckBoxes;
+- (IBAction)femaleCheckBoxWasTapped:(id)sender;
+
+- (IBAction)maleCheckBoxWasTapped:(id)sender;
 
 @end

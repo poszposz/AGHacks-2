@@ -126,6 +126,9 @@
                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="HsL-bq-e8B" id="ice-RL-oq8"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yJw-Iu-kci" customClass="BEMCheckBox">
                                 <rect key="frame" x="20" y="306" width="25" height="25"/>
@@ -145,6 +148,9 @@
                                         <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="HsL-bq-e8B" id="rZj-ts-wA9"/>
+                                </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1C-wL-aDC">
                                 <rect key="frame" x="53" y="108" width="51" height="21"/>
@@ -190,6 +196,9 @@
                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="HsL-bq-e8B" id="P9L-Ua-LG4"/>
+                                </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LT8-CQ-2up">
                                 <rect key="frame" x="137" y="403" width="33" height="33"/>
@@ -216,10 +225,8 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="female" destination="A0B-rx-neo" id="lWt-Kl-3Z7"/>
+                        <outlet property="isPracticalCheckbox" destination="yJw-Iu-kci" id="3xr-fI-k66"/>
                         <outlet property="male" destination="ABI-sX-TWT" id="OuQ-a0-e4g"/>
-                        <outletCollection property="allCheckBoxes" destination="A0B-rx-neo" id="jlI-r6-Aca"/>
-                        <outletCollection property="allCheckBoxes" destination="yJw-Iu-kci" id="93J-Sw-6l4"/>
-                        <outletCollection property="allCheckBoxes" destination="ABI-sX-TWT" id="GNu-PP-Q3z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8PJ-9D-ziq" userLabel="First Responder" sceneMemberID="firstResponder"/>

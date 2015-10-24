@@ -19,13 +19,39 @@
     [super viewDidLoad];
     [[self navigationController] setNavigationBarHidden:NO animated:YES];
     [[self navigationController] setTitle:@"Basic Info"];
-    // Do any additional setup after loading the view.
+    [self setupCheckboxes];
+
+}
+
+-(void)setupCheckboxes {
+    
+    self.female.onAnimationType = BEMAnimationTypeBounce;
+    self.female.offAnimationType = BEMAnimationTypeBounce;
+    self.male.onAnimationType = BEMAnimationTypeBounce;
+    self.male.offAnimationType = BEMAnimationTypeBounce;
+    self.isPracticalCheckbox.onAnimationType = BEMAnimationTypeBounce;
+    self.isPracticalCheckbox.offAnimationType = BEMAnimationTypeBounce;
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)femaleCheckBoxWasTapped:(id)sender {
+    
+    if (self.female.on) {
+        self.male.userInteractionEnabled = NO;
+    }
+
+}
+
+- (void)maleCheckBoxWasTapped:(id)sender {
+    
+}
+
+
 
 /*
 #pragma mark - Navigation
