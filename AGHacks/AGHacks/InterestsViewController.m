@@ -23,7 +23,6 @@ static NSString *cellIdentifier = @"cellIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[self navigationController] setNavigationBarHidden:NO animated:YES];
-    [[self navigationController] setTitle:@"Interests"];
     
     self.selectedInterests = [@[] mutableCopy];
     
@@ -63,6 +62,8 @@ static NSString *cellIdentifier = @"cellIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     Interest interest = [[self.interests objectAtIndex:indexPath.row] intValue];
     cell.textLabel.text = [GiftManager stringValueForinterest:interest];
+    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:17];
+    cell.textLabel.textColor = [UIColor whiteColor];
     cell.backgroundColor = [UIColor lightGrayColor];
     [self setupBackgroundViewForCell:cell];
     
