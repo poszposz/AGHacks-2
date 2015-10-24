@@ -11,6 +11,7 @@
 		951CD2F41BDBC248009239AD /* UINavigationBar+GiftyNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 951CD2F31BDBC248009239AD /* UINavigationBar+GiftyNavigationBar.m */; settings = {ASSET_TAGS = (); }; };
 		951CD2F71BDBC2F2009239AD /* InterestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951CD2F61BDBC2F1009239AD /* InterestsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		951CD2FE1BDBD11D009239AD /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951CD2FD1BDBD11D009239AD /* MapViewController.m */; settings = {ASSET_TAGS = (); }; };
+		951CD3021BDBD329009239AD /* CharacterInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951CD3011BDBD329009239AD /* CharacterInfoViewController.m */; settings = {ASSET_TAGS = (); }; };
 		95231F071BDADD110060776C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 95231F061BDADD110060776C /* Podfile */; settings = {ASSET_TAGS = (); }; };
 		95231F0A1BDAE35F0060776C /* LoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95231F091BDAE35F0060776C /* LoaderViewController.m */; settings = {ASSET_TAGS = (); }; };
 		95231F0D1BDAE6470060776C /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 95231F0C1BDAE6470060776C /* UIColor+HexString.m */; settings = {ASSET_TAGS = (); }; };
@@ -37,6 +38,8 @@
 		951CD2F61BDBC2F1009239AD /* InterestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterestsViewController.m; sourceTree = "<group>"; };
 		951CD2FC1BDBD11D009239AD /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		951CD2FD1BDBD11D009239AD /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		951CD3001BDBD329009239AD /* CharacterInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterInfoViewController.h; sourceTree = "<group>"; };
+		951CD3011BDBD329009239AD /* CharacterInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterInfoViewController.m; sourceTree = "<group>"; };
 		95231F061BDADD110060776C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95231F081BDAE35F0060776C /* LoaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoaderViewController.h; sourceTree = "<group>"; };
 		95231F091BDAE35F0060776C /* LoaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoaderViewController.m; sourceTree = "<group>"; };
@@ -149,6 +152,15 @@
 			name = Map;
 			sourceTree = "<group>";
 		};
+		951CD2FF1BDBD304009239AD /* CharacterInfo */ = {
+			isa = PBXGroup;
+			children = (
+				951CD3001BDBD329009239AD /* CharacterInfoViewController.h */,
+				951CD3011BDBD329009239AD /* CharacterInfoViewController.m */,
+			);
+			name = CharacterInfo;
+			sourceTree = "<group>";
+		};
 		9F3BE6B61BDA71660020F023 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +188,7 @@
 				951CD2F81BDBC3AD009239AD /* Interests */,
 				951CD2F11BDBB6EB009239AD /* Categories */,
 				951CD2F01BDBB6DB009239AD /* BasicInfo */,
+				951CD2FF1BDBD304009239AD /* CharacterInfo */,
 				9FDB68811BDBB64900A50118 /* Data */,
 				951CD2FB1BDBD0F1009239AD /* Map */,
 				9F3BE6C51BDA71660020F023 /* AppDelegate.h */,
@@ -340,6 +353,7 @@
 				9FDB68871BDBB66600A50118 /* GiftManager.m in Sources */,
 				9F3BE6CA1BDA71660020F023 /* ViewController.m in Sources */,
 				951CD2F41BDBC248009239AD /* UINavigationBar+GiftyNavigationBar.m in Sources */,
+				951CD3021BDBD329009239AD /* CharacterInfoViewController.m in Sources */,
 				9F3BE6C71BDA71660020F023 /* AppDelegate.m in Sources */,
 				951CD2FE1BDBD11D009239AD /* MapViewController.m in Sources */,
 				9F3BE6C41BDA71660020F023 /* main.m in Sources */,
