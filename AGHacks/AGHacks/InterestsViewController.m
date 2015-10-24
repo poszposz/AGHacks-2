@@ -22,12 +22,13 @@ static NSString *cellIdentifier = @"cellIdentifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[self navigationController] setTitle:@"Interests"];
+    [[self navigationController] setNavigationBarHidden:NO animated:YES];
     
     self.selectedInterests = [@[] mutableCopy];
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.backgroundColor = [UIColor lightGrayColor];
     
     self.interests = [GiftManager allInterests];
     
@@ -38,6 +39,12 @@ static NSString *cellIdentifier = @"cellIdentifier";
     // handle saving selected data
     [getApp().choice setSelectedInterests:self.selectedInterests];
     [self performSegueWithIdentifier:@"characterSegue" sender:self];
+}
+
+-(void)setupBackgroundViewForCell:(UITableViewCell *)cell {
+    UIView *view = [[UIView alloc]initWithFrame:cell.bounds];
+    view.backgroundColor = [UIColor darkGrayColor];
+    cell.selectedBackgroundView = view;
 }
 
 // MARK: tableView

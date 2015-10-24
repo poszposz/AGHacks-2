@@ -25,6 +25,7 @@ static NSString *cellIdentifier = @"characterCellIdentifier";
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.backgroundColor = [UIColor lightGrayColor];
     
     self.selectedCharacterTypes = [@[] mutableCopy];
     
@@ -41,7 +42,13 @@ static NSString *cellIdentifier = @"characterCellIdentifier";
 
 - (void)nextDidClick:(id)sender {
     [getApp().choice setSelectedCharacters:self.selectedCharacterTypes];
-    // prefirm some segue here :)
+    [self performSegueWithIdentifier:@"giftSegue" sender:self];
+}
+
+-(void)setupBackgroundViewForCell:(UITableViewCell *)cell {
+    UIView *view = [[UIView alloc]initWithFrame:cell.bounds];
+    view.backgroundColor = [UIColor darkGrayColor];
+    cell.selectedBackgroundView = view;
 }
 
 //MARK: table view
