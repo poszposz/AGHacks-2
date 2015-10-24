@@ -20,6 +20,8 @@
 		9F3BE6CD1BDA71660020F023 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F3BE6CB1BDA71660020F023 /* Main.storyboard */; };
 		9F3BE6CF1BDA71660020F023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F3BE6CE1BDA71660020F023 /* Assets.xcassets */; };
 		9F3BE6D21BDA71660020F023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F3BE6D01BDA71660020F023 /* LaunchScreen.storyboard */; };
+		9FDB68841BDBB65800A50118 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB68831BDBB65800A50118 /* Gift.m */; settings = {ASSET_TAGS = (); }; };
+		9FDB68871BDBB66600A50118 /* GiftManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB68861BDBB66600A50118 /* GiftManager.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,10 @@
 		9F3BE6CE1BDA71660020F023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F3BE6D11BDA71660020F023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F3BE6D31BDA71660020F023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FDB68821BDBB65800A50118 /* Gift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gift.h; sourceTree = "<group>"; };
+		9FDB68831BDBB65800A50118 /* Gift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gift.m; sourceTree = "<group>"; };
+		9FDB68851BDBB66600A50118 /* GiftManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftManager.h; sourceTree = "<group>"; };
+		9FDB68861BDBB66600A50118 /* GiftManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,7 @@
 				95231F121BDAF1B60060776C /* MainViewController.m */,
 				95231F141BDB03390060776C /* BasicInfoViewController.h */,
 				95231F151BDB03390060776C /* BasicInfoViewController.m */,
+				9FDB68811BDBB64900A50118 /* Data */,
 				95231F0B1BDAE6470060776C /* UIColor+HexString.h */,
 				95231F0C1BDAE6470060776C /* UIColor+HexString.m */,
 				95231F0E1BDAE6660060776C /* UIBezierPath+Shapes.h */,
@@ -129,6 +136,17 @@
 				9F3BE6C31BDA71660020F023 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9FDB68811BDBB64900A50118 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9FDB68821BDBB65800A50118 /* Gift.h */,
+				9FDB68831BDBB65800A50118 /* Gift.m */,
+				9FDB68851BDBB66600A50118 /* GiftManager.h */,
+				9FDB68861BDBB66600A50118 /* GiftManager.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,8 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FDB68841BDBB65800A50118 /* Gift.m in Sources */,
 				95231F0D1BDAE6470060776C /* UIColor+HexString.m in Sources */,
 				95231F161BDB03390060776C /* BasicInfoViewController.m in Sources */,
+				9FDB68871BDBB66600A50118 /* GiftManager.m in Sources */,
 				9F3BE6CA1BDA71660020F023 /* ViewController.m in Sources */,
 				9F3BE6C71BDA71660020F023 /* AppDelegate.m in Sources */,
 				9F3BE6C41BDA71660020F023 /* main.m in Sources */,

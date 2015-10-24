@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B72CE2927D1BB86DB783BCB19076BB18"
-               BuildableName = "Pods_AGHacks.framework"
-               BlueprintName = "Pods-AGHacks"
+               BlueprintIdentifier = "566D684A68E09758048DBF71B5F34369"
+               BuildableName = "BEMCheckBox.framework"
+               BlueprintName = "BEMCheckBox"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B72CE2927D1BB86DB783BCB19076BB18"
-            BuildableName = "Pods_AGHacks.framework"
-            BlueprintName = "Pods-AGHacks"
+            BlueprintIdentifier = "566D684A68E09758048DBF71B5F34369"
+            BuildableName = "BEMCheckBox.framework"
+            BlueprintName = "BEMCheckBox"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
