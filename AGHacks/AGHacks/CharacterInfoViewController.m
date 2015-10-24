@@ -42,7 +42,7 @@ static NSString *cellIdentifier = @"characterCellIdentifier";
 
 - (void)nextDidClick:(id)sender {
     [getApp().choice setSelectedCharacters:self.selectedCharacterTypes];
-    // prefirm some segue here :)
+    [self performSegueWithIdentifier:@"giftSegue" sender:self];
 }
 
 -(void)setupBackgroundViewForCell:(UITableViewCell *)cell {

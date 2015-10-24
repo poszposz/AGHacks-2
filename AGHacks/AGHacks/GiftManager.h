@@ -11,7 +11,7 @@
 
 @interface GiftManager : NSObject
 
-- (NSArray *)fetchGiftsWithGender:(Gender)gender age:(NSNumber *)age price:(NSNumber *)price interest:(Interest)interest character:(Character)character practical:(BOOL)practical;
+- (NSArray *)fetchGiftsWithGender:(Gender)gender age:(NSNumber *)age price:(NSNumber *)price interests:(NSArray *)interests characters:(NSArray *)characters practical:(BOOL)practical;
 
 - (void)createDefaultGifts;
 

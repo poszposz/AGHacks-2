@@ -57,6 +57,10 @@
         self.female.on = NO;
     }
     
+    if (checkBox == self.isPracticalCheckbox) {
+        getApp().choice.practical = YES;
+    }
+    
 }
 
 @end
