@@ -17,8 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[self navigationController] setNavigationBarHidden:NO animated:YES];
-    [[self navigationController] setTitle:@"Basic Info"];
     [self setupCheckboxes];
     self.female.delegate = self;
     self.male.delegate = self;
@@ -35,6 +33,11 @@
     self.isPracticalCheckbox.onAnimationType = BEMAnimationTypeBounce;
     self.isPracticalCheckbox.offAnimationType = BEMAnimationTypeBounce;
     
+}
+
+
+-(void)viewWillAppear:(BOOL)animated {
+    [[self navigationController] setNavigationBarHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,15 +58,5 @@
     }
     
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

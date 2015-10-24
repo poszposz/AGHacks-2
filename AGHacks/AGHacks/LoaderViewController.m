@@ -20,16 +20,10 @@
     
     [super viewDidLoad];
     
-    
-    
     [self performSegueWithIdentifier:@"moveToMain" sender:nil];
 }
 
 - (void)onRemoteDataFetchSuccess {
-    
-//    if(self.dataManager.getResponseCode == 1) {
-//        [self.view makeToast:@"No Internet connection. Cached data is loading." duration:3.0 position:@"bottom"];
-//    }
     
     double delayInSeconds = 1.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t) (delayInSeconds * NSEC_PER_SEC));
@@ -44,12 +38,6 @@
 - (void)didReceiveMemoryWarning {
     
     [super didReceiveMemoryWarning];
-    
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        [self.splashView startAnimation];
-//    });
-//    
-//    [self performSegueWithIdentifier:@"moveToMain" sender:nil];
 
 }
 

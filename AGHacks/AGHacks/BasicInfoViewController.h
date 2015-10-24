@@ -15,8 +15,4 @@
 @property (weak, nonatomic) IBOutlet BEMCheckBox *male;
 @property (weak, nonatomic) IBOutlet BEMCheckBox *isPracticalCheckbox;
 
-- (IBAction)femaleCheckBoxWasTapped:(id)sender;
-
-- (IBAction)maleCheckBoxWasTapped:(id)sender;
-
 @end
