@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DDFD60677DA944AE93CA813 /* libPods-AGHacks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1384BE40510ACA761349E653 /* libPods-AGHacks.a */; };
+		3D0375FE0AE930DD2B38F5CF /* Pods_AGHacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A58FC0EDB269DAB617F33CC /* Pods_AGHacks.framework */; };
 		95231F071BDADD110060776C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 95231F061BDADD110060776C /* Podfile */; settings = {ASSET_TAGS = (); }; };
 		95231F0A1BDAE35F0060776C /* LoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95231F091BDAE35F0060776C /* LoaderViewController.m */; settings = {ASSET_TAGS = (); }; };
 		95231F0D1BDAE6470060776C /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 95231F0C1BDAE6470060776C /* UIColor+HexString.m */; settings = {ASSET_TAGS = (); }; };
@@ -24,8 +24,8 @@
 
 /* Begin PBXFileReference section */
 		03479257620B0499A9D8FA2E /* Pods-AGHacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGHacks.release.xcconfig"; path = "Pods/Target Support Files/Pods-AGHacks/Pods-AGHacks.release.xcconfig"; sourceTree = "<group>"; };
-		1384BE40510ACA761349E653 /* libPods-AGHacks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AGHacks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D9F1D0B9373DD06AA8F1527 /* Pods-AGHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGHacks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AGHacks/Pods-AGHacks.debug.xcconfig"; sourceTree = "<group>"; };
+		8A58FC0EDB269DAB617F33CC /* Pods_AGHacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AGHacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95231F061BDADD110060776C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95231F081BDAE35F0060776C /* LoaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoaderViewController.h; sourceTree = "<group>"; };
 		95231F091BDAE35F0060776C /* LoaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoaderViewController.m; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DDFD60677DA944AE93CA813 /* libPods-AGHacks.a in Frameworks */,
+				3D0375FE0AE930DD2B38F5CF /* Pods_AGHacks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +73,7 @@
 		87BE1EF650D18F83A0593FD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1384BE40510ACA761349E653 /* libPods-AGHacks.a */,
+				8A58FC0EDB269DAB617F33CC /* Pods_AGHacks.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

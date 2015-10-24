@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F0A22E81B8A52CB9D7F6C2BD'
+               BlueprintIdentifier = '24592BD72D7E9A36A5F0BD27'
                BlueprintName = 'Pods-AGHacks'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-AGHacks.a'>
+               BuildableName = 'Pods_AGHacks.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
