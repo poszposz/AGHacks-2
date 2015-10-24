@@ -13,4 +13,6 @@
 @property (weak, nonatomic) IBOutlet BEMCheckBox *female;
 @property (weak, nonatomic) IBOutlet BEMCheckBox *male;
 
+@property (nonatomic, strong) IBOutletCollection(BEMCheckBox) NSArray *allCheckBoxes;
+
 @end

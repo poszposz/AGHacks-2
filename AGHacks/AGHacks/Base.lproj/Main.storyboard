@@ -212,6 +212,9 @@
                     <connections>
                         <outlet property="female" destination="A0B-rx-neo" id="lWt-Kl-3Z7"/>
                         <outlet property="male" destination="ABI-sX-TWT" id="OuQ-a0-e4g"/>
+                        <outletCollection property="allCheckBoxes" destination="A0B-rx-neo" id="jlI-r6-Aca"/>
+                        <outletCollection property="allCheckBoxes" destination="yJw-Iu-kci" id="93J-Sw-6l4"/>
+                        <outletCollection property="allCheckBoxes" destination="ABI-sX-TWT" id="GNu-PP-Q3z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8PJ-9D-ziq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -234,6 +237,29 @@
                                 <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Fzd-mq-8kR">
+                                        <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fzd-mq-8kR" id="dCY-eo-3mR">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gT1-Dd-Ssy">
+                                        <rect key="frame" x="0.0" y="116" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gT1-Dd-Ssy" id="wT0-u5-N0k">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <animations/>
