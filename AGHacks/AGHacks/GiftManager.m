@@ -51,7 +51,13 @@
              [NSNumber numberWithInt:InterestFood],
              [NSNumber numberWithInt:InterestMovies],
              [NSNumber numberWithInt:InterestComputers],
-             [NSNumber numberWithInt:InterestMotorization]];
+             [NSNumber numberWithInt:InterestMotorization],
+             [NSNumber numberWithInt:InterestFishing],
+             [NSNumber numberWithInt:InterestGadgets],
+             [NSNumber numberWithInt:InterestGames],
+             [NSNumber numberWithInt:InterestMusic],
+             [NSNumber numberWithInt:InterestSport]
+             ];
 }
 
 + (NSString *)stringValueForinterest:(Interest)interest {
@@ -74,6 +80,21 @@
         case InterestMotorization:
             return @"Motorization";
             break;
+        case InterestFishing:
+            return @"Fishing";
+            break;
+        case InterestGadgets:
+            return @"Gadgets";
+            break;
+        case InterestGames:
+            return @"Games";
+            break;
+        case InterestMusic:
+            return @"Music";
+            break;
+        case InterestSport:
+            return @"Sport";
+            break;
         default:
             break;
     }
@@ -86,7 +107,12 @@
     return @[[NSNumber numberWithInt:CharacterCool],
              [NSNumber numberWithInt:CharacterIntrovert],
              [NSNumber numberWithInt:CharacterGeek],
-             [NSNumber numberWithInt:CharacterUniversal]];
+             [NSNumber numberWithInt:CharacterUniversal],
+             [NSNumber numberWithInt:CharacterTalkative],
+             [NSNumber numberWithInt:CharacterAltruist],
+             [NSNumber numberWithInt:CharacterExtrovert],
+             [NSNumber numberWithInt:CharacterPerfectionist]
+             ];
 }
 
 + (NSString *)stringValueForCharacter:(Character)character {
@@ -103,6 +129,18 @@
             break;
         case CharacterUniversal:
             return @"Universal";
+            break;
+        case CharacterAltruist:
+            return @"Altruist";
+            break;
+        case CharacterExtrovert:
+            return @"Extrovert";
+            break;
+        case CharacterPerfectionist:
+            return @"Perfectionist";
+            break;
+        case CharacterTalkative:
+            return @"Talkative";
             break;
         default:
             break;

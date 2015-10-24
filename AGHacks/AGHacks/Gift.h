@@ -20,14 +20,23 @@ typedef enum {
     InterestComputers,
     InterestUniversal,
     InterestMovies,
-    InterestFood
+    InterestFood,
+    InterestFishing,
+    InterestGames,
+    InterestMusic,
+    InterestGadgets,
+    InterestSport
 } Interest;
 
 typedef enum {
     CharacterIntrovert,
     CharacterCool,
     CharacterGeek,
-    CharacterUniversal
+    CharacterUniversal,
+    CharacterTalkative,
+    CharacterAltruist,
+    CharacterExtrovert,
+    CharacterPerfectionist
 } Character;
 
 @interface Gift : NSObject
