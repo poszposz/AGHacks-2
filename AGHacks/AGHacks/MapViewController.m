@@ -1,36 +1,40 @@
 //
-//  MainViewController.m
+//  MapViewController.m
 //  AGHacks
 //
 //  Created by Magda on 24.10.2015.
 //  Copyright © 2015 VORM. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "MapViewController.h"
 
-@interface MainViewController ()
+#define IS_OS_8_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+
+@import MapKit;
+@import CoreLocation;
+
+@interface MapViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation MapViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[self navigationController] setNavigationBarHidden:YES];
     
-    CBZSplashView *splashView = [CBZSplashView splashViewWithIcon:[UIImage imageNamed:@"SplashIcon"] backgroundColor:[UIColor lightGrayColor]];
+    [self.mapView setDelegate:self];
+    self.manager = [[CLLocationManager alloc] init];
+    self.manager.delegate = self;
     
-    splashView.animationDuration = 1.4;
+#ifdef __IPHONE_8_0
+    if(IS_OS_8_OR_LATER) {
+        [self.manager requestWhenInUseAuthorization];
+    }
+#endif
+    [self.manager startUpdatingLocation];
     
-    [self.view addSubview:splashView];
-    
-    self.splashView = splashView;
-    [splashView startAnimation];
-    
-}
+    self.mapView.showsUserLocation = YES;
 
--(void)viewWillAppear:(BOOL)animated {
-    [[self navigationController] setNavigationBarHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning {

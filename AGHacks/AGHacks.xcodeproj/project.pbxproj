@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3D0375FE0AE930DD2B38F5CF /* Pods_AGHacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A58FC0EDB269DAB617F33CC /* Pods_AGHacks.framework */; };
+		951CD2F41BDBC248009239AD /* UINavigationBar+GiftyNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 951CD2F31BDBC248009239AD /* UINavigationBar+GiftyNavigationBar.m */; settings = {ASSET_TAGS = (); }; };
+		951CD2F71BDBC2F2009239AD /* InterestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951CD2F61BDBC2F1009239AD /* InterestsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		951CD2FE1BDBD11D009239AD /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951CD2FD1BDBD11D009239AD /* MapViewController.m */; settings = {ASSET_TAGS = (); }; };
 		95231F071BDADD110060776C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 95231F061BDADD110060776C /* Podfile */; settings = {ASSET_TAGS = (); }; };
 		95231F0A1BDAE35F0060776C /* LoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95231F091BDAE35F0060776C /* LoaderViewController.m */; settings = {ASSET_TAGS = (); }; };
 		95231F0D1BDAE6470060776C /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 95231F0C1BDAE6470060776C /* UIColor+HexString.m */; settings = {ASSET_TAGS = (); }; };
@@ -28,6 +31,12 @@
 		03479257620B0499A9D8FA2E /* Pods-AGHacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGHacks.release.xcconfig"; path = "Pods/Target Support Files/Pods-AGHacks/Pods-AGHacks.release.xcconfig"; sourceTree = "<group>"; };
 		2D9F1D0B9373DD06AA8F1527 /* Pods-AGHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGHacks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AGHacks/Pods-AGHacks.debug.xcconfig"; sourceTree = "<group>"; };
 		8A58FC0EDB269DAB617F33CC /* Pods_AGHacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AGHacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		951CD2F21BDBC248009239AD /* UINavigationBar+GiftyNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+GiftyNavigationBar.h"; sourceTree = "<group>"; };
+		951CD2F31BDBC248009239AD /* UINavigationBar+GiftyNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+GiftyNavigationBar.m"; sourceTree = "<group>"; };
+		951CD2F51BDBC2F1009239AD /* InterestsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterestsViewController.h; sourceTree = "<group>"; };
+		951CD2F61BDBC2F1009239AD /* InterestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterestsViewController.m; sourceTree = "<group>"; };
+		951CD2FC1BDBD11D009239AD /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		951CD2FD1BDBD11D009239AD /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		95231F061BDADD110060776C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95231F081BDAE35F0060776C /* LoaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoaderViewController.h; sourceTree = "<group>"; };
 		95231F091BDAE35F0060776C /* LoaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoaderViewController.m; sourceTree = "<group>"; };
@@ -100,8 +109,44 @@
 				95231F0C1BDAE6470060776C /* UIColor+HexString.m */,
 				95231F0E1BDAE6660060776C /* UIBezierPath+Shapes.h */,
 				95231F0F1BDAE6660060776C /* UIBezierPath+Shapes.m */,
+				951CD2F21BDBC248009239AD /* UINavigationBar+GiftyNavigationBar.h */,
+				951CD2F31BDBC248009239AD /* UINavigationBar+GiftyNavigationBar.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		951CD2F81BDBC3AD009239AD /* Interests */ = {
+			isa = PBXGroup;
+			children = (
+				951CD2F91BDBC3C2009239AD /* Controller */,
+				951CD2FA1BDBC3D5009239AD /* View */,
+			);
+			name = Interests;
+			sourceTree = "<group>";
+		};
+		951CD2F91BDBC3C2009239AD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				951CD2F51BDBC2F1009239AD /* InterestsViewController.h */,
+				951CD2F61BDBC2F1009239AD /* InterestsViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		951CD2FA1BDBC3D5009239AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		951CD2FB1BDBD0F1009239AD /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				951CD2FC1BDBD11D009239AD /* MapViewController.h */,
+				951CD2FD1BDBD11D009239AD /* MapViewController.m */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 		9F3BE6B61BDA71660020F023 = {
@@ -126,8 +171,13 @@
 		9F3BE6C11BDA71660020F023 /* AGHacks */ = {
 			isa = PBXGroup;
 			children = (
+				9F3BE6CB1BDA71660020F023 /* Main.storyboard */,
+				9F3BE6D01BDA71660020F023 /* LaunchScreen.storyboard */,
+				951CD2F81BDBC3AD009239AD /* Interests */,
 				951CD2F11BDBB6EB009239AD /* Categories */,
 				951CD2F01BDBB6DB009239AD /* BasicInfo */,
+				9FDB68811BDBB64900A50118 /* Data */,
+				951CD2FB1BDBD0F1009239AD /* Map */,
 				9F3BE6C51BDA71660020F023 /* AppDelegate.h */,
 				9F3BE6C61BDA71660020F023 /* AppDelegate.m */,
 				9F3BE6C81BDA71660020F023 /* ViewController.h */,
@@ -136,16 +186,7 @@
 				95231F091BDAE35F0060776C /* LoaderViewController.m */,
 				95231F111BDAF1B60060776C /* MainViewController.h */,
 				95231F121BDAF1B60060776C /* MainViewController.m */,
-				95231F141BDB03390060776C /* BasicInfoViewController.h */,
-				95231F151BDB03390060776C /* BasicInfoViewController.m */,
-				9FDB68811BDBB64900A50118 /* Data */,
-				95231F0B1BDAE6470060776C /* UIColor+HexString.h */,
-				95231F0C1BDAE6470060776C /* UIColor+HexString.m */,
-				95231F0E1BDAE6660060776C /* UIBezierPath+Shapes.h */,
-				95231F0F1BDAE6660060776C /* UIBezierPath+Shapes.m */,
-				9F3BE6CB1BDA71660020F023 /* Main.storyboard */,
 				9F3BE6CE1BDA71660020F023 /* Assets.xcassets */,
-				9F3BE6D01BDA71660020F023 /* LaunchScreen.storyboard */,
 				9F3BE6D31BDA71660020F023 /* Info.plist */,
 				9F3BE6C21BDA71660020F023 /* Supporting Files */,
 			);
@@ -298,8 +339,11 @@
 				95231F161BDB03390060776C /* BasicInfoViewController.m in Sources */,
 				9FDB68871BDBB66600A50118 /* GiftManager.m in Sources */,
 				9F3BE6CA1BDA71660020F023 /* ViewController.m in Sources */,
+				951CD2F41BDBC248009239AD /* UINavigationBar+GiftyNavigationBar.m in Sources */,
 				9F3BE6C71BDA71660020F023 /* AppDelegate.m in Sources */,
+				951CD2FE1BDBD11D009239AD /* MapViewController.m in Sources */,
 				9F3BE6C41BDA71660020F023 /* main.m in Sources */,
+				951CD2F71BDBC2F2009239AD /* InterestsViewController.m in Sources */,
 				95231F131BDAF1B60060776C /* MainViewController.m in Sources */,
 				95231F0A1BDAE35F0060776C /* LoaderViewController.m in Sources */,
 				95231F101BDAE6660060776C /* UIBezierPath+Shapes.m in Sources */,

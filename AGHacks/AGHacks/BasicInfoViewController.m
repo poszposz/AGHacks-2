@@ -7,6 +7,7 @@
 //
 
 #import "BasicInfoViewController.h"
+#import "UINavigationBar+GiftyNavigationBar.h"
 
 @interface BasicInfoViewController ()
 
@@ -16,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[self navigationController] setNavigationBarHidden:NO animated:YES];
+    [[self navigationController] setTitle:@"Basic Info"];
     // Do any additional setup after loading the view.
 }
 

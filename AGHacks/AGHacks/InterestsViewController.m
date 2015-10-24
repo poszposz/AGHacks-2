@@ -1,36 +1,27 @@
 //
-//  MainViewController.m
+//  InterestsViewController.m
 //  AGHacks
 //
 //  Created by Magda on 24.10.2015.
 //  Copyright © 2015 VORM. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "InterestsViewController.h"
+#import "UINavigationBar+GiftyNavigationBar.h"
 
-@interface MainViewController ()
+@interface InterestsViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation InterestsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[self navigationController] setNavigationBarHidden:YES];
+    [self.tableView setUserInteractionEnabled:YES];
+    [[self navigationController] setTitle:@"Interests"];
     
-    CBZSplashView *splashView = [CBZSplashView splashViewWithIcon:[UIImage imageNamed:@"SplashIcon"] backgroundColor:[UIColor lightGrayColor]];
-    
-    splashView.animationDuration = 1.4;
-    
-    [self.view addSubview:splashView];
-    
-    self.splashView = splashView;
-    [splashView startAnimation];
-    
-}
-
--(void)viewWillAppear:(BOOL)animated {
-    [[self navigationController] setNavigationBarHidden:YES];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning {

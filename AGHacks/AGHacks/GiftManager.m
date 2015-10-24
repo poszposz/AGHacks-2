@@ -8,7 +8,6 @@
 
 #import "GiftManager.h"
 
-#define kDefaultAgeRange 5
 #define kDefaultPriceRange 20
 
 @interface GiftManager ()
