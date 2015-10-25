@@ -20,45 +20,45 @@
 
 - (void)createDefaultGifts {
     
-    Gift *g1 = [Gift giftWithName:@"Golarka" gender:GenderMan minimumAge:@15 maximumAge:@100 price:@200 interest:InterestUniversal character:CharacterUniversal practical:YES];
+    Gift *g1 = [Gift giftWithName:@"Shaver" gender:GenderMan minimumAge:@18 maximumAge:@100 price:@200 interest:InterestUniversal character:CharacterUniversal practical:YES];
     
-    Gift *g2 = [Gift giftWithName:@"Krem na zmarszczki" gender:GenderWoman minimumAge:@30 maximumAge:@100 price:@50 interest:InterestUniversal character:CharacterUniversal practical:YES];
+    Gift *g2 = [Gift giftWithName:@"Cosmetics" gender:GenderWoman minimumAge:@15 maximumAge:@100 price:@50 interest:InterestUniversal character:CharacterUniversal practical:YES];
     
-    Gift *g3 = [Gift giftWithName:@"Darth Vader figure" gender:GenderUniversal minimumAge:@5 maximumAge:@100 price:@25 interest:InterestMovies character:CharacterGeek practical:NO];
+    Gift *g3 = [Gift giftWithName:@"Darth Vader figure" gender:GenderMan minimumAge:@5 maximumAge:@30 price:@25 interest:InterestMovies character:CharacterGeek practical:NO];
     
-    Gift *g4 = [Gift giftWithName:@"Ciastka" gender:GenderUniversal minimumAge:@0 maximumAge:@100 price:@10 interest:InterestFood character:CharacterUniversal practical:NO];
+    Gift *g4 = [Gift giftWithName:@"Sweets" gender:GenderUniversal minimumAge:@0 maximumAge:@100 price:@10 interest:InterestFood character:CharacterUniversal practical:YES];
     
-    Gift *g5 = [Gift giftWithName:@"Action man" gender:GenderUniversal minimumAge:@0 maximumAge:@100 price:@50 interest:InterestUniversal character:CharacterGeek practical:NO];
+    Gift *g5 = [Gift giftWithName:@"Action Man" gender:GenderMan minimumAge:@0 maximumAge:@100 price:@50 interest:InterestUniversal character:CharacterUniversal practical:NO];
     
-    Gift *g6 = [Gift giftWithName:@"Portfel" gender:GenderMan minimumAge:@15 maximumAge:@100 price:@150 interest:InterestUniversal character:CharacterUniversal practical:YES];
+    Gift *g6 = [Gift giftWithName:@"Wallet" gender:GenderMan minimumAge:@15 maximumAge:@100 price:@150 interest:InterestUniversal character:CharacterUniversal practical:YES];
     
-    Gift *g7 = [Gift giftWithName:@"Gra planszowa" gender:GenderMan minimumAge:@10 maximumAge:@100 price:@130 interest:InterestUniversal character:CharacterUniversal practical:NO];
+    Gift *g7 = [Gift giftWithName:@"Board Game" gender:GenderUniversal minimumAge:@10 maximumAge:@100 price:@130 interest:InterestGames character:CharacterGeek practical:NO];
     
-    Gift *g8 = [Gift giftWithName:@"Ksiazka (beletrystyka)" gender:GenderMan minimumAge:@14 maximumAge:@100 price:@40 interest:InterestUniversal character:CharacterUniversal practical:NO];
+    Gift *g8 = [Gift giftWithName:@"Book" gender:GenderUniversal minimumAge:@14 maximumAge:@100 price:@40 interest:InterestUniversal character:CharacterIntrovert practical:NO];
     
-    Gift *g9 = [Gift giftWithName:@"Pluszak" gender:GenderMan minimumAge:@3 maximumAge:@14 price:@30 interest:InterestUniversal character:CharacterUniversal practical:NO];
+    Gift *g9 = [Gift giftWithName:@"Plush Toy" gender:GenderWoman minimumAge:@3 maximumAge:@14 price:@30 interest:InterestUniversal character:CharacterUniversal practical:NO];
     
-    Gift *g10 = [Gift giftWithName:@"Perfumy" gender:GenderMan minimumAge:@16 maximumAge:@100 price:@160 interest:InterestUniversal character:CharacterUniversal practical:YES];
+    Gift *g10 = [Gift giftWithName:@"Perfume" gender:GenderWoman minimumAge:@16 maximumAge:@100 price:@160 interest:InterestUniversal character:CharacterUniversal practical:YES];
     
-    Gift *g11 = [Gift giftWithName:@"Alkohol" gender:GenderMan minimumAge:@18 maximumAge:@100 price:@70 interest:InterestUniversal character:CharacterUniversal practical:NO];
+    Gift *g11 = [Gift giftWithName:@"Alcohol" gender:GenderMan minimumAge:@18 maximumAge:@100 price:@70 interest:InterestUniversal character:CharacterTalkative practical:YES];
     
-    Gift *g12 = [Gift giftWithName:@"Film na DVD" gender:GenderMan minimumAge:@15 maximumAge:@100 price:@30 interest:InterestUniversal character:CharacterUniversal practical:NO];
+    Gift *g12 = [Gift giftWithName:@"DVD movie" gender:GenderMan minimumAge:@15 maximumAge:@100 price:@30 interest:InterestMovies character:CharacterIntrovert practical:NO];
     
-    Gift *g13 = [Gift giftWithName:@"Odzież - dodatki" gender:GenderMan minimumAge:@5 maximumAge:@100 price:@100 interest:InterestUniversal character:CharacterUniversal practical:YES];
+    Gift *g13 = [Gift giftWithName:@"Clothing" gender:GenderWoman minimumAge:@5 maximumAge:@100 price:@100 interest:InterestUniversal character:CharacterUniversal practical:YES];
     
-    Gift *g14 = [Gift giftWithName:@"Zegarek" gender:GenderMan minimumAge:@15 maximumAge:@100 price:@300 interest:InterestUniversal character:CharacterUniversal practical:YES];
+    Gift *g14 = [Gift giftWithName:@"Watch" gender:GenderMan minimumAge:@15 maximumAge:@100 price:@300 interest:InterestGadgets character:CharacterPerfectionist practical:YES];
     
-    Gift *g15 = [Gift giftWithName:@"Biżuteria" gender:GenderWoman minimumAge:@17 maximumAge:@100 price:@300 interest:InterestUniversal character:CharacterUniversal practical:NO];
+    Gift *g15 = [Gift giftWithName:@"Jewelery" gender:GenderWoman minimumAge:@17 maximumAge:@100 price:@300 interest:InterestUniversal character:CharacterUniversal practical:NO];
     
-    Gift *g16 = [Gift giftWithName:@"Płyta z muzyką" gender:GenderMan minimumAge:@15 maximumAge:@100 price:@30 interest:InterestUniversal character:CharacterUniversal practical:NO];
+    Gift *g16 = [Gift giftWithName:@"Music CD" gender:GenderMan minimumAge:@15 maximumAge:@100 price:@30 interest:InterestMusic character:CharacterIntrovert practical:NO];
     
-    Gift *g17 = [Gift giftWithName:@"Wycieczka zagraniczna" gender:GenderMan minimumAge:@20 maximumAge:@40 price:@2000 interest:InterestUniversal character:CharacterUniversal practical:NO];
+    Gift *g17 = [Gift giftWithName:@"Foreign Tour" gender:GenderUniversal minimumAge:@20 maximumAge:@40 price:@2000 interest:InterestUniversal character:CharacterUniversal practical:NO];
     
-    Gift *g18 = [Gift giftWithName:@"Okulary przeciwsłoneczne" gender:GenderMan minimumAge:@15 maximumAge:@100 price:@60 interest:InterestUniversal character:CharacterUniversal practical:YES];
+    Gift *g18 = [Gift giftWithName:@"Sunglasses" gender:GenderUniversal minimumAge:@15 maximumAge:@100 price:@60 interest:InterestGadgets character:CharacterCool practical:YES];
     
-    Gift *g19 = [Gift giftWithName:@"Sluchawki multimedialne" gender:GenderMan minimumAge:@15 maximumAge:@100 price:@100 interest:InterestUniversal character:CharacterUniversal practical:YES];
+    Gift *g19 = [Gift giftWithName:@"Headphones" gender:GenderMan minimumAge:@15 maximumAge:@100 price:@100 interest:InterestGadgets character:CharacterGeek practical:YES];
     
-    Gift *g20 = [Gift giftWithName:@"Akcesoria wędkarskie" gender:GenderMan minimumAge:@15 maximumAge:@100 price:@100 interest:InterestUniversal character:CharacterUniversal practical:NO];
+    Gift *g20 = [Gift giftWithName:@"Fishing Accessories" gender:GenderMan minimumAge:@15 maximumAge:@100 price:@100 interest:InterestFishing character:CharacterIntrovert practical:YES];
     
     self.gifts = @[g1, g2, g3, g4, g5, g6, g7, g8, g9, g10, g11, g12, g13, g14, g15, g16, g17, g18, g19, g20];
 }

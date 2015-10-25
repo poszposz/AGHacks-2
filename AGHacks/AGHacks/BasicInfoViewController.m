@@ -23,6 +23,11 @@
     self.female.delegate = self;
     self.male.delegate = self;
     self.isPracticalCheckbox.delegate = self;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                          action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
 
 }
 
@@ -70,6 +75,11 @@
         getApp().choice.practical = YES;
     }
     
+}
+
+-(void)dismissKeyboard {
+    [self.ageTextField resignFirstResponder];
+    [self.priceTextField resignFirstResponder];
 }
 
 @end
