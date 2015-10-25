@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "MapKit/MapKit.h"
+#import "PlacePin.h"
 
-@interface MapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+@interface MapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate, UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (nonatomic, retain) CLLocationManager *manager;

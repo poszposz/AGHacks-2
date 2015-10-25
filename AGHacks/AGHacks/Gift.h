@@ -25,7 +25,9 @@ typedef enum {
     InterestGames,
     InterestMusic,
     InterestGadgets,
-    InterestSport
+    InterestSport,
+    InterestBooks
+    
 } Interest;
 
 typedef enum {

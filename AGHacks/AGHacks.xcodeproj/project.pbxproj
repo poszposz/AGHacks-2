@@ -29,7 +29,8 @@
 		9FDB68841BDBB65800A50118 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB68831BDBB65800A50118 /* Gift.m */; settings = {ASSET_TAGS = (); }; };
 		9FDB68871BDBB66600A50118 /* GiftManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB68861BDBB66600A50118 /* GiftManager.m */; settings = {ASSET_TAGS = (); }; };
 		9FDB68911BDBE4A800A50118 /* ChoiceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB68901BDBE4A800A50118 /* ChoiceModel.m */; settings = {ASSET_TAGS = (); }; };
-		9FDB68951BDBEA5A00A50118 /* SelectionResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB68941BDBEA5A00A50118 /* SelectionResultViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9FDB68981BDC57A500A50118 /* PlacePin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB68971BDC57A500A50118 /* PlacePin.m */; settings = {ASSET_TAGS = (); }; };
+		9FDB689A1BDC58E900A50118 /* mapPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FDB68991BDC58E900A50118 /* mapPin.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,9 @@
 		9FDB68901BDBE4A800A50118 /* ChoiceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoiceModel.m; sourceTree = "<group>"; };
 		9FDB68931BDBEA5A00A50118 /* SelectionResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionResultViewController.h; sourceTree = "<group>"; };
 		9FDB68941BDBEA5A00A50118 /* SelectionResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionResultViewController.m; sourceTree = "<group>"; };
+		9FDB68961BDC57A500A50118 /* PlacePin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacePin.h; sourceTree = "<group>"; };
+		9FDB68971BDC57A500A50118 /* PlacePin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacePin.m; sourceTree = "<group>"; };
+		9FDB68991BDC58E900A50118 /* mapPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapPin.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,8 @@
 			children = (
 				951CD2FC1BDBD11D009239AD /* MapViewController.h */,
 				951CD2FD1BDBD11D009239AD /* MapViewController.m */,
+				9FDB68961BDC57A500A50118 /* PlacePin.h */,
+				9FDB68971BDC57A500A50118 /* PlacePin.m */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -225,6 +231,7 @@
 		9F3BE6C21BDA71660020F023 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9FDB68991BDC58E900A50118 /* mapPin.png */,
 				9F3BE6C31BDA71660020F023 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -316,6 +323,7 @@
 				9F3BE6CF1BDA71660020F023 /* Assets.xcassets in Resources */,
 				95231F071BDADD110060776C /* Podfile in Resources */,
 				9F3BE6CD1BDA71660020F023 /* Main.storyboard in Resources */,
+				9FDB689A1BDC58E900A50118 /* mapPin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FDB68981BDC57A500A50118 /* PlacePin.m in Sources */,
 				9FDB68841BDBB65800A50118 /* Gift.m in Sources */,
 				95231F0D1BDAE6470060776C /* UIColor+HexString.m in Sources */,
 				95231F161BDB03390060776C /* BasicInfoViewController.m in Sources */,
