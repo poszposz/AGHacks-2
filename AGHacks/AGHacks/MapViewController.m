@@ -52,36 +52,44 @@ static NSString *mapAnnotationId = @"mapAnnotation";
     [localSearch startWithCompletionHandler:^(MKLocalSearchResponse *response, NSError *error) {
         for (MKMapItem *mapItem in response.mapItems) {
             MKPlacemark *placemark = mapItem.placemark;
-            PlacePin *mapPoint = [[PlacePin alloc] initWithLocation:placemark.coordinate];
-            [mapPoint setTitle:self.gift.POIidentifier];
-            [self.mapView addAnnotation:mapPoint];
+//            PlacePin *mapPoint = [[PlacePin alloc] initWithLocation:placemark.coordinate];
+//            [mapPoint setTitle:self.gift.POIidentifier];
+//            [self.mapView addAnnotation:mapPoint];
+            
+            MKPointAnnotation *annotation = [[MKPointAnnotation alloc]init];
+            [annotation setCoordinate:placemark.coordinate];
+            [annotation setTitle:placemark.name];
+//            [annotation setSubtitle:placemark.add];
+            [self.mapView viewForAnnotation:annotation];
+            [self.mapView addAnnotation:annotation];
+//            [self.mapView selectAnnotation:annotation animated:YES];
         }
     }];
 }
 
-- (MKAnnotationView *)mapView:(MKMapView *)mapview viewForAnnotation:(id <MKAnnotation>)annotation
-{
-    if ([annotation isKindOfClass:[MKUserLocation class]])
-        return nil;
-    MKAnnotationView *annotationView = [self.mapView dequeueReusableAnnotationViewWithIdentifier:mapAnnotationId];
-    if(annotationView) {
-
-        return annotationView;
-    }
-    else {
-        MKAnnotationView *annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation
-                                                                        reuseIdentifier:mapAnnotationId];
-        CGRect r = annotationView.frame;
-        r.size.width = 40;
-        r.size.height = 40;
-        annotationView.frame = r;
-        UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
-        [imgView setImage:[UIImage imageNamed:@"mapPin.png"]];
-        [annotationView addSubview:imgView];
-        return annotationView;
-    }
-    return nil;
-}
+//- (MKAnnotationView *)mapView:(MKMapView *)mapview viewForAnnotation:(id <MKAnnotation>)annotation
+//{
+//    if ([annotation isKindOfClass:[MKUserLocation class]])
+//        return nil;
+//    MKAnnotationView *annotationView = [self.mapView dequeueReusableAnnotationViewWithIdentifier:mapAnnotationId];
+//    if(annotationView) {
+//
+//        return annotationView;
+//    }
+//    else {
+//        MKAnnotationView *annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation
+//                                                                        reuseIdentifier:mapAnnotationId];
+//        CGRect r = annotationView.frame;
+//        r.size.width = 40;
+//        r.size.height = 40;
+//        annotationView.frame = r;
+//        UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+//        [imgView setImage:[UIImage imageNamed:@"mapPin.png"]];
+//        [annotationView addSubview:imgView];
+//        return annotationView;
+//    }
+//    return nil;
+//}
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
     if (locations.count) {
