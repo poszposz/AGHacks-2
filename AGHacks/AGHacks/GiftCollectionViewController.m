@@ -53,6 +53,7 @@ static NSString *colCellId = @"cellid";
     label.textAlignment = NSTextAlignmentCenter;
     label.font = [UIFont boldSystemFontOfSize:12];
     label.text = gift.name;
+    label.numberOfLines = 2;
     [cell.contentView addSubview:label];
     [cell.layer setBorderWidth:2.0f];
     [cell.layer setBorderColor:[UIColor whiteColor].CGColor];

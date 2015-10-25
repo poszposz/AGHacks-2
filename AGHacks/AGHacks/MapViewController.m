@@ -36,11 +36,6 @@ static NSString *mapAnnotationId = @"mapAnnotation";
     }
     [self.manager startUpdatingLocation];
     
-    self.mapView.showsUserLocation = YES;
-
-    self.manager.desiredAccuracy = kCLLocationAccuracyBest;
-    self.manager.distanceFilter = kCLLocationAccuracyKilometer;
-    
     self.gatheredGifts = [getApp().giftManager fetchGiftsForChoice:getApp().choice];
 }
 
@@ -67,34 +62,13 @@ static NSString *mapAnnotationId = @"mapAnnotation";
     }];
 }
 
-//- (MKAnnotationView *)mapView:(MKMapView *)mapview viewForAnnotation:(id <MKAnnotation>)annotation
-//{
-//    if ([annotation isKindOfClass:[MKUserLocation class]])
-//        return nil;
-//    MKAnnotationView *annotationView = [self.mapView dequeueReusableAnnotationViewWithIdentifier:mapAnnotationId];
-//    if(annotationView) {
-//
-//        return annotationView;
-//    }
-//    else {
-//        MKAnnotationView *annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation
-//                                                                        reuseIdentifier:mapAnnotationId];
-//        CGRect r = annotationView.frame;
-//        r.size.width = 40;
-//        r.size.height = 40;
-//        annotationView.frame = r;
-//        UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
-//        [imgView setImage:[UIImage imageNamed:@"mapPin.png"]];
-//        [annotationView addSubview:imgView];
-//        return annotationView;
-//    }
-//    return nil;
-//}
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
     if (locations.count) {
         CLLocation *location = [locations objectAtIndex:0];
         if (location.coordinate.latitude != 0 && location.coordinate.longitude != 0) {
+            MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(location.coordinate, 800, 800);
+            [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
             [self searchPOIWithPhrase:@"restauracja" inLocation:location.coordinate];
             [self.manager stopUpdatingLocation];
         }
@@ -107,12 +81,6 @@ static NSString *mapAnnotationId = @"mapAnnotation";
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Hey" message:@"Do you want to get route to this place?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Yes!", nil];
     [alert show];
-}
-
-- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
-{
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800);
-    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
 }
 
 - (NSString *)deviceLocation {
