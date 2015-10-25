@@ -7,6 +7,7 @@
 //
 
 #import "GiftCollectionViewController.h"
+#import "MapViewController.h"
 
 static NSString *colCellId = @"cellid";
 
@@ -57,6 +58,19 @@ static NSString *colCellId = @"cellid";
     [cell.layer setBorderColor:[UIColor whiteColor].CGColor];
     [cell.layer setCornerRadius:50.0f];
     return cell;
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    Gift *gift = [self.gatheredGifts objectAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:@"mapSegue" sender:gift];
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    MapViewController *mapvc = (MapViewController *)segue.destinationViewController;
+    mapvc.gift = (Gift *)sender;
 }
 
 - (void)didReceiveMemoryWarning {

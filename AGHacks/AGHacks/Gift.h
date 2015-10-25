@@ -52,6 +52,8 @@ typedef enum {
 @property (nonatomic, assign) Character character;
 @property (nonatomic, assign) BOOL practical;
 
-+ (Gift *)giftWithName:(NSString *)name gender:(Gender)gender minimumAge:(NSNumber *)minage maximumAge:(NSNumber *)maxage price:(NSNumber *)price interest:(Interest)interest character:(Character)character practical:(BOOL)practical;
+@property (nonatomic, strong) NSString *POIidentifier;
+
++ (Gift *)giftWithName:(NSString *)name gender:(Gender)gender minimumAge:(NSNumber *)minage maximumAge:(NSNumber *)maxage price:(NSNumber *)price interest:(Interest)interest character:(Character)character practical:(BOOL)practical POIidentifier:(NSString *)poiID;
 
 @end

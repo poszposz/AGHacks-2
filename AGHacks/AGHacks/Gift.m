@@ -10,7 +10,7 @@
 
 @implementation Gift
 
-+ (Gift *)giftWithName:(NSString *)name gender:(Gender)gender minimumAge:(NSNumber *)minage maximumAge:(NSNumber *)maxage price:(NSNumber *)price interest:(Interest)interest character:(Character)character practical:(BOOL)practical {
++ (Gift *)giftWithName:(NSString *)name gender:(Gender)gender minimumAge:(NSNumber *)minage maximumAge:(NSNumber *)maxage price:(NSNumber *)price interest:(Interest)interest character:(Character)character practical:(BOOL)practical POIidentifier:(NSString *)poiID {
     
     Gift *gift = [[Gift alloc] init];
     gift.name = name;
@@ -21,6 +21,7 @@
     gift.interest = interest;
     gift.character = character;
     gift.practical = practical;
+    gift.POIidentifier = poiID;
     return gift;
 }
 

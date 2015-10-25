@@ -7,6 +7,7 @@
 //
 
 #import "MapViewController.h"
+#import "AppDelegate.h"
 
 static NSString *mapAnnotationId = @"mapAnnotation";
 
@@ -39,17 +40,20 @@ static NSString *mapAnnotationId = @"mapAnnotation";
 
     self.manager.desiredAccuracy = kCLLocationAccuracyBest;
     self.manager.distanceFilter = kCLLocationAccuracyKilometer;
+    
+    self.gatheredGifts = [getApp().giftManager fetchGiftsForChoice:getApp().choice];
 }
 
 - (void)searchPOIWithPhrase:(NSString *)phrase inLocation:(CLLocationCoordinate2D)coords {
     MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
     request.region = MKCoordinateRegionMake(coords, MKCoordinateSpanMake(0.5, 0.5));
-    request.naturalLanguageQuery = phrase; // or business name
+    request.naturalLanguageQuery = self.gift.POIidentifier; // or business name
     MKLocalSearch *localSearch = [[MKLocalSearch alloc] initWithRequest:request];
     [localSearch startWithCompletionHandler:^(MKLocalSearchResponse *response, NSError *error) {
         for (MKMapItem *mapItem in response.mapItems) {
             MKPlacemark *placemark = mapItem.placemark;
             PlacePin *mapPoint = [[PlacePin alloc] initWithLocation:placemark.coordinate];
+            [mapPoint setTitle:self.gift.POIidentifier];
             [self.mapView addAnnotation:mapPoint];
         }
     }];
@@ -117,6 +121,8 @@ static NSString *mapAnnotationId = @"mapAnnotation";
     CLLocationCoordinate2D endingCoord = self.selectedCoordinate;
     MKPlacemark *endLocation = [[MKPlacemark alloc] initWithCoordinate:endingCoord addressDictionary:nil];
     MKMapItem *endingItem = [[MKMapItem alloc] initWithPlacemark:endLocation];
+    
+    [endingItem setName:self.gift.POIidentifier];
     
     NSMutableDictionary *launchOptions = [[NSMutableDictionary alloc] init];
     [launchOptions setObject:MKLaunchOptionsDirectionsModeDriving forKey:MKLaunchOptionsDirectionsModeKey];
