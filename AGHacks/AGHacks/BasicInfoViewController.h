@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet BEMCheckBox *male;
 @property (weak, nonatomic) IBOutlet BEMCheckBox *isPracticalCheckbox;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
 @property (weak, nonatomic) IBOutlet UITextField *ageTextField;
 @property (weak, nonatomic) IBOutlet UITextField *priceTextField;
 

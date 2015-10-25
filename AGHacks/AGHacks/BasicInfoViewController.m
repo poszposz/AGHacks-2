@@ -42,7 +42,12 @@
     
 }
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    [self.scrollView setContentOffset:CGPointMake(0, 100) animated:YES];
+}
+
 - (void)textFieldDidEndEditing:(UITextField *)textField {
+    [self.scrollView setContentOffset:CGPointZero animated:YES];
     if (textField == self.ageTextField) {
         getApp().choice.selectedAge = [NSNumber numberWithInt:[self.ageTextField.text intValue]];
     }
